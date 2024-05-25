@@ -9,7 +9,7 @@ const menu = {
             },
 
             price: {
-                "1": 300,
+                "1": 250,
                 "1.5": 375,
             },
         },
@@ -72,8 +72,8 @@ const menu = {
                 en: "Iskender meatball"
             },
             price: {
-                "150": 250,
-                "200": 375,
+                "150 gr": 250,
+                "200 gr": 375,
             },
         },
         {
@@ -82,11 +82,6 @@ const menu = {
                 ru: "Смешанное мясо на гриле",
                 tr: "Karışık Izgara Et",
                 en: "Mixedilled Meat"
-            },
-            description: {
-                ru: "",
-                tr: "tek",
-                en: "Single"
             },
             price: {
                 "1": 1050,
@@ -113,9 +108,9 @@ const menu = {
                 en: "Plainmeat doner"
             },
             price: {
-                "100": 250,
-                "150": 375,
-                "200": 500,
+                "100 gr": 250,
+                "150 gr": 375,
+                "200 gr": 500,
             },
         },
         {
@@ -126,36 +121,36 @@ const menu = {
                 en: "Meat doner with rice"
             },
             price: {
-                "100": 250,
-                "150": 375,
-                "200": 500,
+                "100 gr": 250,
+                "150 gr": 375,
+                "200 gr": 500,
+            },
+        },
+        {
+            img: "Sade tavuk doner",
+            name: {
+                ru: "Куриный донер с рисом",
+                tr: "Pilav ustu tavuk doner",
+                en: "Chicken doner with rice"
+            },
+
+            price: {
+                "100 gr": 190,
+                "150 gr": 285,
+                "200 gr": 380,
             },
         },
         {
             img: "Pilav ustu tavuk doner",
             name: {
                 ru: "Куриный донер",
-                tr: "Pilav ustu tavuk doner",
-                en: "Chicken doner with rice"
-            },
-
-            price: {
-                "100": 190,
-                "150": 285,
-                "200": 380,
-            },
-        },
-        {
-            img: "Sade tavuk doner",
-            name: {
-                ru: "Куриный донер",
                 tr: "Sade tavuk doner",
                 en: "Plain chicken doner"
             },
             price: {
-                "100": 190,
-                "150": 285,
-                "200": 380,
+                "100 gr": 190,
+                "150 gr": 285,
+                "200 gr": 380,
             },
         },
         {
@@ -175,90 +170,82 @@ const menu = {
     pide: [
 
         {
-            img: "2",
+            img: "Kuşbaşılı kaşarlı pıde",
             name: {
-                ru: "пиде",
-                tr: "pide",
-                en: "pide"
-            },
-            description: {
-                ru: "Одна порция",
-                tr: "Porsiyon",
-                en: "Portion"
+                ru: "Пиде с кубиками и сыром кашар",
+                tr: "Kuşbaşılı kaşarlı pıde",
+                en: "Pita with meat cubes and kashar cheese"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 240,
+                "1.5": 360,
             },
         },
         {
-            img: "3",
+            img: "Kuşbaşılı pıde",
             name: {
-                ru: "пиде",
-                tr: "pide",
-                en: "pide"
-            },
-            description: {
-                ru: "Одна порция",
-                tr: "Porsiyon",
-                en: "Portion"
+                ru: "Пиде с кубиками",
+                tr: "Kuşbaşılı pide",
+                en: "Pita wıth meat cubes"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 210,
+                "1.5": 305,
             },
         },
         {
-            img: "Kasarli pide",
+            img: "Kaşarlı pide",
             name: {
                 ru: "Сырный лаваш",
-                tr: "Kasarli pide",
+                tr: "Kaşarlı pide",
                 en: "Pita with kashar cheese"
             },
-
             price: {
                 "1": 180,
                 "1.5": 270,
             },
         },
         {
-            img: "5",
+            img: "Kıymalı pide",
             name: {
-                ru: "лаваш",
-                tr: "pide",
-                en: "Pita"
+                ru: "Пиде с фаршем",
+                tr: "Kıymalı pide",
+                en: "Pita with ground meat"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 180,
+                "1.5": 270,
             },
         },
         {
-            img: "7",
+            img: "Karışık pide",
             name: {
-                ru: "лаваш",
-                tr: "pide",
-                en: "Pita"
-            },
-            description: {
-                ru: "Одна порция",
-                tr: "Porsiyon",
-                en: "Portion"
+                ru: "Смешанный лаваш",
+                tr: "Karışık pide",
+                en: "Mixed pita"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 240,
+                "1.5": 345,
             },
         },
         {
-            img: "Kiymali kasarli pide",
+            img: "Kıymalı kaşarlı pide",
             name: {
-                ru: "лаваш",
-                tr: "Kiymali kasarli pide",
+                ru: "Пиде из фарша и сыра",
+                tr: "Kıymalı kaşarlı pide",
+                en: "Pita with kashar cheese andound meat"
+            },
+            price: {
+                "1": 210,
+                "1.5": 305,
+            },
+        },
+        {
+            img: "Sucuklu kaşarlı pide",
+            name: {
+                ru: "Пиде с суджуком",
+                tr: "Sucuklu kaşarlı pide",
                 en: "Pita with kashar cheese andound meat"
             },
             price: {
@@ -357,9 +344,8 @@ const menu = {
                 en: "Chicken stew"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 260,
+                "1.5": 390,
             },
         },
         {
@@ -399,12 +385,14 @@ const menu = {
             },
         },
         {
-            img: "3",
-            name: { ru: "пицца", tr: "pizza", en: "pizza" },
+            img: "Margarita pizza",
+            name: {
+                ru: "Пицца маргарита",
+                tr: "Margarita pizza",
+                en: "Margarita pizza"
+            },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 180,
             },
         },
     ],
@@ -435,19 +423,6 @@ const menu = {
             },
         },
         {
-            img: "1",
-            name: {
-                ru: "Сырная тарелка",
-                tr: "Peynir Tabağı",
-                en: "Cheese Platter"
-            },
-            price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
-            },
-        },
-        {
             img: "Et iskander",
             name: {
                 ru: "мясной искандер",
@@ -455,8 +430,9 @@ const menu = {
                 en: "Meat iskander"
             },
             price: {
-                "150": 250,
-                "200": 375,
+                "100 gr": 250,
+                "150 gr": 375,
+                "200 gr": 500,
             },
         },
         {
@@ -467,9 +443,9 @@ const menu = {
                 en: "Chicken iskander"
             },
             price: {
-                "100": 210,
-                "150": 315,
-                "200": 420,
+                "100 gr": 210,
+                "150 gr": 315,
+                "200 gr": 420,
             },
         },
         {
@@ -492,9 +468,9 @@ const menu = {
                 en: "Meat gobit"
             },
             price: {
-                "100": 210,
-                "150": 315,
-                "200": 420,
+                "100 gr": 210,
+                "150 gr": 315,
+                "200 gr": 420,
             },
         },
         {
@@ -505,9 +481,9 @@ const menu = {
                 en: "Chicken gobit"
             },
             price: {
-                "100": 100,
-                "150": 150,
-                "200": 200,
+                "100 gr": 100,
+                "150 gr": 150,
+                "200 gr": 200,
             },
         },
         {
@@ -518,112 +494,228 @@ const menu = {
                 en: "Meat wrap"
             },
             price: {
-                "100": 210,
-                "150": 315,
-                "200": 350,
+                "100 gr": 210,
+                "150 gr": 315,
+                "200 gr": 420,
             },
         },
         {
             img: "Tavuk dürüm",
             name: {
-                ru: "Сырная тарелка",
+                ru: "Дурум с курицей",
                 tr: "Tavuk dürüm",
                 en: "Chicken wrap"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "100 gr": 100,
+                "150 gr": 150,
+                "200 gr": 200,
             },
         }
+    ],
+    salads: [
+        {
+            img: "Çoban salata",
+            name: {
+                ru: "Салат Пастух",
+                tr: "Çoban salata",
+                en: "Shepherd salad"
+            },
+            price: {
+                "1": 95,
+            },
+        },
+        {
+            img: "Mevsim salata",
+            name: {
+                ru: "Сезонный салат",
+                tr: "Mevsim salata",
+                en: "Seasonal salad"
+            },
+            price: {
+                "1": 95,
+            },
+        },
+        {
+            img: "Patlıcan salatası",
+            name: {
+                ru: "Салат из баклажанов",
+                tr: "Patlıcan salatası",
+                en: "Eegplant salad"
+            },
+            price: {
+                "1": 95,
+            },
+        },
     ],
     dessert: [
         {
-            img: "1",
-            name: { ru: "Говяжьи ребрышки", tr: "Dana Kaburga", en: "Beef Ribs" },
-            description: {
-                ru: "Говяжьи ребрышки, приготовленные в специальном барбекю на яблоневом дереве, коптятся на медленном огне 10-12...",
-                tr: "Özel BBQ’de, elma odunuyla, 10-12 saate kadar ağır ateşte tütsülenerek pişirilmiş dana kaburga, baharatlı baby patates...",
-                en: "Beef ribs cooked in a special BBQ with apple wood, smoked over a slow fire for 10-12 hours, spicy baby potatoes..."
+            img: "Künefe",
+            name: {
+                ru: "Кунефе",
+                tr: "Künefe",
+                en: "Künefe"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 100,
             },
         },
     ],
+
     drinks: [
         {
-            img: "1",
-            name: { ru: "Аффогато", tr: "Affogato", en: "Beef Ribs" },
-            description: {
-                ru: "С ванильным мороженым и эспрессо",
-                tr: "Vanilyalı dondurma ve Espresso ile",
-                en: "With vanilla ice cream and espresso"
+            img: "Fanta",
+            name: {
+                ru: "Fanta",
+                tr: "Fanta",
+                en: "Fanta"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 45,
             },
         },
         {
-            img: "2",
-            name: { ru: "Капучино", tr: "Cappuccino", en: "Cappuccino" },
-            description: {
-                ru: "С эспрессо и молочным кремом",
-                tr: "Espresso ve süt kreması ile",
-                en: "With espresso and milk cream"
+            img: "Sprite",
+            name: {
+                ru: "Sprite",
+                tr: "Sprite",
+                en: "Sprite"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 45,
+            },
+        },        {
+            img: "Coca cola",
+            name: {
+                ru: "Coca cola",
+                tr: "Coca cola",
+                en: "Coca cola"
+            },
+            price: {
+                "1": 45,
             },
         },
         {
-            img: "3",
-            name: { ru: "Классический турецкий чай", tr: "Klasik Türk Çayı", en: "Classic Turkish Tea" },
-            description: {
-                ru: "Описание товара отсутствует",
-                tr: "Ürün açıklaması bulunmamaktadır",
-                en: "There is no product description"
+            img: "Cappuccino",
+            name: {
+                ru: "Капучино",
+                tr: "Cappuccino",
+                en: "Cappuccino"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 50,
             },
         },
         {
-            img: "4",
-            name: { ru: "Бутылка Coca Cola", tr: "Coca Cola Şişe", en: "Coca Cola Bottle" },
-            description: {
-                ru: "Описание товара отсутствует",
-                tr: "Ürün açıklaması bulunmamaktadır",
-                en: "There is no product description"
+            img: "Çayı",
+            name: {
+                ru: "чай",
+                tr: "Çayı",
+                en: "Tea"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 15,
             },
         },
         {
-            img: "5",
-            name: { ru: "Бутылка Sprite", tr: "Sprite Şişe", en: "Sprite Bottle" },
-            description: {
-                ru: "Описание товара отсутствует",
-                tr: "Ürün açıklaması bulunmamaktadır",
-                en: "There is no product description"
+            img: "Meyve suları",
+            name: {
+                ru: "Фруктовый сок",
+                tr: "Meyve suları",
+                en: "fruit juices"
             },
             price: {
-                "1": 250,
-                "1.5": 300,
-                "2": 350,
+                "1": 45,
             },
-        }
+        },
+        {
+            img: "Fuse tea",
+            name: {
+                ru: "Fuse tea",
+                tr: "Fuse tea",
+                en: "Fuse tea"
+            },
+            price: {
+                "1": 45,
+            },
+        },
+        {
+            img: "Ayran",
+            name: {
+                ru: "Айран",
+                tr: "Ayran",
+                en: "Ayran"
+            },
+            price: {
+                "1": 25,
+            },
+        },
+        {
+            img: "Yayık ayran",
+            name: {
+                ru: "Yayık ayran",
+                tr: "Yayık ayran",
+                en: "Buttermılk drınk"
+            },
+            price: {
+                "1": 40,
+            },
+        },
+        {
+            img: "Meyvelı soda",
+            name: {
+                ru: "Фруктовая газировка",
+                tr: "Meyvelı soda",
+                en: "Fruit sparkling water"
+            },
+            price: {
+                "1": 25,
+            },
+        },
+        {
+            img: "Soda",
+            name: {
+                ru: "газировка",
+                tr: "Soda",
+                en: "sparkling water"
+            },
+            price: {
+                "1": 25,
+            },
+        },
+        {
+            img: "Limonata",
+            name: {
+                ru: "Лимонад",
+                tr: "Limonata",
+                en: "Lemonade"
+            },
+            price: {
+                "1": 45,
+            },
+        },
+        {
+            img: "Şalgam",
+            name: {
+                ru: "Шалгам",
+                tr: "Şalgam",
+                en: "Şalgam"
+            },
+            price: {
+                "1": 30,
+            },
+        },
+        {
+            img: "Su",
+            name: {
+                ru: "Вода",
+                tr: "Su",
+                en: "Water"
+            },
+            price: {
+                "1": 10,
+            },
+        },
     ]
 }
 
@@ -634,6 +726,16 @@ const menu = {
 
 const lang = document.querySelector("html").getAttribute("lang");
 
+
+
+let wordPorsion;
+if (lang == 'ru') {
+    wordPorsion = 'порция';
+} else if (lang == 'en') {
+    wordPorsion = 'portion';
+} else if (lang == 'tr') {
+    wordPorsion = 'porsiyon';
+}
 
 const menuListAll = document.querySelectorAll(".menu-list"); // Дивы с категориями для карточек
 for (let i = 0; i < menuListAll.length; i++) { // Цикл, который подставляет все карточки с блюдами
@@ -650,7 +752,7 @@ for (let i = 0; i < menuListAll.length; i++) { // Цикл, который по�
         for (let priceKey of Object.keys(cartInfo.price).sort((a, b) => parseFloat(a) - parseFloat(b))) {
             priceElements += `
             <div class="menu-cart__price-amount" data-dish-name="${cartInfo.name[lang]}" data-dish-name-tr="${cartInfo.name.tr}" data-portion="${priceKey}" data-price="${cartInfo.price[priceKey]}">
-                <span class="price__value">${priceKey} порция: ${cartInfo.price[priceKey]}₺</span>
+                <span class="price__value">${priceKey} ${wordPorsion}: ${cartInfo.price[priceKey]}₺</span>
                 <div class="menu-cart__amount">
                     <button class="amount-decrease"> - </button>
                     <span class="amount-number">0</span>
@@ -712,7 +814,7 @@ function loadFromLocalStorage() {
         return JSON.parse(data);
     }
     return [];
-} 
+}
 
 // Загрузка данных из локального хранилища при загрузке страницы
 selectedItems = loadFromLocalStorage();

@@ -473,7 +473,7 @@ textarea:focus {
     position: absolute;
     top: 0;
     right: 0;
-    color: var(--color3);
+    color:#e65c50;
     background-color: var(--color1);
     border-radius: 0 0 0 10px;
     font-size: 20px;
@@ -486,7 +486,7 @@ textarea:focus {
     }
 }
 .basket .basket__button_active{
-    background-color: var(--color3);
+    background-color: #e65c50;
     color: var(--color1);
 }
 .basket_active_full{
