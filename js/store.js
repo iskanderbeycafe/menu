@@ -3,7 +3,7 @@ const menu = {
         {
             img: "Adana veya urfa kebap",
             name: {
-                ru: "Адана или кебаб Урфа",
+                ru: "Адана или Урфа Кебаб",
                 tr: "Adana veya urfa kebap",
                 en: "Adana or urfa kebap"
             },
@@ -16,7 +16,7 @@ const menu = {
         {
             img: "Kuzu Şiş",
             name: {
-                ru: "Бараньи шашлыки",
+                ru: "Бараний Шашлык",
                 tr: "Kuzu Şiş",
                 en: "Lamb Shish"
             },
@@ -29,7 +29,7 @@ const menu = {
         {
             img: "Tavuk Şiş",
             name: {
-                ru: "Куриный шашлык",
+                ru: "Куриный Шашлык",
                 tr: "Tavuk Şiş",
                 en: "Chiken Shish"
             },
@@ -42,7 +42,7 @@ const menu = {
         {
             img: "Izgara kofte",
             name: {
-                ru: "Мясные шарики на гриле",
+                ru: "Котлеты на Гриле",
                 tr: "Izgara kofte",
                 en: "Grilled meatball"
             },
@@ -54,7 +54,7 @@ const menu = {
         {
             img: "Patlicanli kebap",
             name: {
-                ru: "Шашлык из баклажанов",
+                ru: "Шашлык с Баклажаном",
                 tr: "Patlicanli kebap",
                 en: "kebab with eggplant"
             },
@@ -67,7 +67,7 @@ const menu = {
         {
             img: "İskender köfte",
             name: {
-                ru: "Искендер кофте",
+                ru: "Искендер с Котлетами",
                 tr: "İskender köfte",
                 en: "Iskender meatball"
             },
@@ -79,7 +79,7 @@ const menu = {
         {
             img: "Karışık Izgara Et",
             name: {
-                ru: "Смешанное мясо на гриле",
+                ru: "Мясное Ассорти на Гриле",
                 tr: "Karışık Izgara Et",
                 en: "Mixedilled Meat"
             },
@@ -103,7 +103,7 @@ const menu = {
         {
             img: "Sade et doner",
             name: {
-                ru: "Мясной донер",
+                ru: "Мясной Донер",
                 tr: "Sade et doner",
                 en: "Plainmeat doner"
             },
@@ -116,7 +116,7 @@ const menu = {
         {
             img: "Pilav ustu et doner",
             name: {
-                ru: "Донер с мясом и рисом",
+                ru: "Донер с Мясом и Рисом",
                 tr: "Pilav ustu et doner",
                 en: "Meat doner with rice"
             },
@@ -129,7 +129,7 @@ const menu = {
         {
             img: "Sade tavuk doner",
             name: {
-                ru: "Куриный донер с рисом",
+                ru: "Куриный Донер",
                 tr: "Pilav ustu tavuk doner",
                 en: "Chicken doner with rice"
             },
@@ -143,7 +143,7 @@ const menu = {
         {
             img: "Pilav ustu tavuk doner",
             name: {
-                ru: "Куриный донер",
+                ru: "Куриный Донер с Рисом",
                 tr: "Sade tavuk doner",
                 en: "Plain chicken doner"
             },
@@ -156,7 +156,7 @@ const menu = {
         {
             img: "Kuzu pirzola",
             name: {
-                ru: "Бараньи отбивные",
+                ru: "Бараньи Отбивные",
                 tr: "Kuzu pirzola",
                 en: "Lamb chops"
             },
@@ -172,7 +172,7 @@ const menu = {
         {
             img: "Kuşbaşılı kaşarlı pıde",
             name: {
-                ru: "Пиде с кубиками и сыром кашар",
+                ru: "Пиде с Мясом и Сыром Кашар",
                 tr: "Kuşbaşılı kaşarlı pıde",
                 en: "Pita with meat cubes and kashar cheese"
             },
@@ -184,7 +184,7 @@ const menu = {
         {
             img: "Kuşbaşılı pıde",
             name: {
-                ru: "Пиде с кубиками",
+                ru: "Пиде с Мясом",
                 tr: "Kuşbaşılı pide",
                 en: "Pita wıth meat cubes"
             },
@@ -196,7 +196,7 @@ const menu = {
         {
             img: "Kaşarlı pide",
             name: {
-                ru: "Сырный лаваш",
+                ru: "Пиде с Сыром Кашар",
                 tr: "Kaşarlı pide",
                 en: "Pita with kashar cheese"
             },
@@ -208,7 +208,7 @@ const menu = {
         {
             img: "Kıymalı pide",
             name: {
-                ru: "Пиде с фаршем",
+                ru: "Пиде с Фаршем",
                 tr: "Kıymalı pide",
                 en: "Pita with ground meat"
             },
@@ -220,7 +220,7 @@ const menu = {
         {
             img: "Karışık pide",
             name: {
-                ru: "Смешанный лаваш",
+                ru: "Пиде Ассорти",
                 tr: "Karışık pide",
                 en: "Mixed pita"
             },
@@ -232,7 +232,7 @@ const menu = {
         {
             img: "Kıymalı kaşarlı pide",
             name: {
-                ru: "Пиде из фарша и сыра",
+                ru: "Пиде из Фарша и Сыром Кашар",
                 tr: "Kıymalı kaşarlı pide",
                 en: "Pita with kashar cheese andound meat"
             },
@@ -244,7 +244,7 @@ const menu = {
         {
             img: "Sucuklu kaşarlı pide",
             name: {
-                ru: "Пиде с суджуком",
+                ru: "Пиде с Колбасой",
                 tr: "Sucuklu kaşarlı pide",
                 en: "Pita with kashar cheese andound meat"
             },
@@ -280,7 +280,7 @@ const menu = {
         {
             img: "Et döner burger",
             name: {
-                ru: "Мясной донер бургер",
+                ru: "Бургер с Мясным Донером",
                 tr: "Et döner burger",
                 en: "Meat doner burger"
             },
@@ -302,7 +302,7 @@ const menu = {
         {
             img: "Tavuk döner Burger",
             name: {
-                ru: "Куриный донер бургер",
+                ru: "Бургер с Куриным Донером",
                 tr: "Tavuk döner Burger",
                 en: "Chicken doner Burger"
             },
@@ -315,7 +315,7 @@ const menu = {
         {
             img: "Kaşarlı mantar güveç",
             name: {
-                ru: "Грибная запеканка с чеддером",
+                ru: "Грибная Запеканка с Чеддером",
                 tr: "Kaşarlı mantar güveç",
                 en: "Mushroom casserole with cheddar"
             },
@@ -327,7 +327,7 @@ const menu = {
         {
             img: "Kofte güveç",
             name: {
-                ru: "Запеканка с фрикадельками",
+                ru: "Запеканка с Котлетами",
                 tr: "Kofte güveç",
                 en: "Meatball stew"
             },
@@ -339,7 +339,7 @@ const menu = {
         {
             img: "Tavuk güveç",
             name: {
-                ru: "куриная запеканка",
+                ru: "Куриная Запеканка",
                 tr: "Tavuk güveç",
                 en: "Chicken stew"
             },
@@ -351,7 +351,7 @@ const menu = {
         {
             img: "Et güveç",
             name: {
-                ru: "Мясное рагу",
+                ru: "Мясная Запеканка",
                 tr: "Et güveç",
                 en: "Meat stew"
             },
@@ -365,7 +365,7 @@ const menu = {
         {
             img: "Karisik pizza",
             name: {
-                ru: "Смешанная пицца",
+                ru: "Пицца Ассорти",
                 tr: "Karisik pizza",
                 en: "Mexed pizza"
             },
@@ -376,7 +376,7 @@ const menu = {
         {
             img: "Sebzell pizza",
             name: {
-                ru: "Овощная пицца",
+                ru: "Овощная Пицца",
                 tr: "Sebzell pizza",
                 en: "Vegetable pizza"
             },
@@ -387,7 +387,7 @@ const menu = {
         {
             img: "Margarita pizza",
             name: {
-                ru: "Пицца маргарита",
+                ru: "Пицца Маргарита",
                 tr: "Margarita pizza",
                 en: "Margarita pizza"
             },
@@ -398,9 +398,9 @@ const menu = {
     ],
     snacks: [
         {
-            img: "Kapali doner",
+            img: "Kapali Et Doner",
             name: {
-                ru: "Закрытый донер с мясом",
+                ru: "Закрытый Донер с Мясом",
                 tr: "Etli kapalı döner ",
                 en: "Closed doner with meat"
             },
@@ -411,9 +411,9 @@ const menu = {
             },
         },
         {
-            img: "Kapali doner",
+            img: "Kapali Tavuk doner",
             name: {
-                ru: "Закрытый донер с курицей",
+                ru: "Закрытый Донер с Курицей",
                 tr: "Tavuklu kapalı döner",
                 en: "Closed doner with chicken"
             },
@@ -425,7 +425,7 @@ const menu = {
         {
             img: "Et iskander",
             name: {
-                ru: "мясной искандер",
+                ru: "Мясной Искандер",
                 tr: "Et iskander",
                 en: "Meat iskander"
             },
@@ -438,7 +438,7 @@ const menu = {
         {
             img: "Tavuk iskander",
             name: {
-                ru: "Куриный искандер",
+                ru: "Куриный Искандер",
                 tr: "Tavuk iskander",
                 en: "Chicken iskander"
             },
@@ -451,7 +451,7 @@ const menu = {
         {
             img: "Beyti sarma",
             name: {
-                ru: "Кебаб-бейти",
+                ru: "Кебаб-Бейти",
                 tr: "Beyti sarma",
                 en: "Beyti wrap"
             },
@@ -463,7 +463,7 @@ const menu = {
         {
             img: "Et gobit",
             name: {
-                ru: "мясной гоббит",
+                ru: "Мясной Гоббит",
                 tr: "Et gobit",
                 en: "Meat gobit"
             },
@@ -476,7 +476,7 @@ const menu = {
         {
             img: "Tavuk gobit",
             name: {
-                ru: "Куриный гоббит",
+                ru: "Куриный Гоббит",
                 tr: "Tavuk gobit",
                 en: "Chicken gobit"
             },
@@ -489,7 +489,7 @@ const menu = {
         {
             img: "Et durum",
             name: {
-                ru: "Мясной ",
+                ru: "Мясная Шаурма ",
                 tr: "Et durum",
                 en: "Meat wrap"
             },
@@ -502,7 +502,7 @@ const menu = {
         {
             img: "Tavuk dürüm",
             name: {
-                ru: "Дурум с курицей",
+                ru: "Шаурма с Курицей",
                 tr: "Tavuk dürüm",
                 en: "Chicken wrap"
             },
@@ -517,7 +517,7 @@ const menu = {
         {
             img: "Çoban salata",
             name: {
-                ru: "Салат Пастух",
+                ru: "Салат Чобан",
                 tr: "Çoban salata",
                 en: "Shepherd salad"
             },
@@ -528,7 +528,7 @@ const menu = {
         {
             img: "Mevsim salata",
             name: {
-                ru: "Сезонный салат",
+                ru: "Сезонный Салат",
                 tr: "Mevsim salata",
                 en: "Seasonal salad"
             },
@@ -539,7 +539,7 @@ const menu = {
         {
             img: "Patlıcan salatası",
             name: {
-                ru: "Салат из баклажанов",
+                ru: "Салат из Баклажанов",
                 tr: "Patlıcan salatası",
                 en: "Eegplant salad"
             },
@@ -566,7 +566,7 @@ const menu = {
         {
             img: "Fanta",
             name: {
-                ru: "Fanta",
+                ru: "Фанта",
                 tr: "Fanta",
                 en: "Fanta"
             },
@@ -577,7 +577,7 @@ const menu = {
         {
             img: "Sprite",
             name: {
-                ru: "Sprite",
+                ru: "Спрайт",
                 tr: "Sprite",
                 en: "Sprite"
             },
@@ -587,7 +587,7 @@ const menu = {
         },        {
             img: "Coca cola",
             name: {
-                ru: "Coca cola",
+                ru: "Кока Кола",
                 tr: "Coca cola",
                 en: "Coca cola"
             },
@@ -609,7 +609,7 @@ const menu = {
         {
             img: "Çayı",
             name: {
-                ru: "чай",
+                ru: "Чай",
                 tr: "Çayı",
                 en: "Tea"
             },
@@ -620,7 +620,7 @@ const menu = {
         {
             img: "Meyve suları",
             name: {
-                ru: "Фруктовый сок",
+                ru: "Фруктовые Соки",
                 tr: "Meyve suları",
                 en: "fruit juices"
             },
@@ -653,7 +653,7 @@ const menu = {
         {
             img: "Yayık ayran",
             name: {
-                ru: "Yayık ayran",
+                ru: "Домашний Айран",
                 tr: "Yayık ayran",
                 en: "Buttermılk drınk"
             },
@@ -664,7 +664,7 @@ const menu = {
         {
             img: "Meyvelı soda",
             name: {
-                ru: "Фруктовая газировка",
+                ru: "Фруктовая Газировка",
                 tr: "Meyvelı soda",
                 en: "Fruit sparkling water"
             },
@@ -675,7 +675,7 @@ const menu = {
         {
             img: "Soda",
             name: {
-                ru: "газировка",
+                ru: "Сода",
                 tr: "Soda",
                 en: "sparkling water"
             },
