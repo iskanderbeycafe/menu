@@ -4,8 +4,8 @@ const menu = {
             img: "Adana veya urfa kebap",
             name: {
                 ru: "Адана или Урфа Кебаб",
-                tr: "Adana veya urfa kebap",
-                en: "Adana or urfa kebap"
+                tr: "Adana veya Urfa Kebap",
+                en: "Adana or Urfa Kebab"
             },
 
             price: {
@@ -31,7 +31,7 @@ const menu = {
             name: {
                 ru: "Куриный Шашлык",
                 tr: "Tavuk Şiş",
-                en: "Chiken Shish"
+                en: "Chicken Shish"
             },
 
             price: {
@@ -43,8 +43,8 @@ const menu = {
             img: "Izgara kofte",
             name: {
                 ru: "Котлеты на Гриле",
-                tr: "Izgara kofte",
-                en: "Grilled meatball"
+                tr: "Izgara Köfte",
+                en: "Grilled Meatball"
             },
             price: {
                 "1": 250,
@@ -55,8 +55,8 @@ const menu = {
             img: "Patlicanli kebap",
             name: {
                 ru: "Шашлык с Баклажаном",
-                tr: "Patlicanli kebap",
-                en: "kebab with eggplant"
+                tr: "Patlıcanlı Kebap",
+                en: "Kebab with Eggplant"
             },
 
             price: {
@@ -68,8 +68,8 @@ const menu = {
             img: "İskender köfte",
             name: {
                 ru: "Искендер с Котлетами",
-                tr: "İskender köfte",
-                en: "Iskender meatball"
+                tr: "İskender Köfte",
+                en: "Iskender Meatball"
             },
             price: {
                 "150 gr": 250,
@@ -81,7 +81,7 @@ const menu = {
             name: {
                 ru: "Мясное Ассорти на Гриле",
                 tr: "Karışık Izgara Et",
-                en: "Mixedilled Meat"
+                en: "Mixed Grilled Meat"
             },
             price: {
                 "1": 1050,
@@ -104,8 +104,8 @@ const menu = {
             img: "Sade et doner",
             name: {
                 ru: "Мясной Донер",
-                tr: "Sade et doner",
-                en: "Plainmeat doner"
+                tr: "Sade Et Döner",
+                en: "Plain Meat Doner"
             },
             price: {
                 "100 gr": 250,
@@ -127,11 +127,11 @@ const menu = {
             },
         },
         {
-            img: "Sade tavuk doner",
+            img: "Sade tavuk doner", // Pilav üstu Tavuk Döner
             name: {
-                ru: "Куриный Донер",
-                tr: "Pilav ustu tavuk doner",
-                en: "Chicken doner with rice"
+                ru: "Куриный Донер с Рисом",
+                tr: "Pilav üstu Tavuk Döner",
+                en: "Chicken Doner with Rice"
             },
 
             price: {
@@ -141,11 +141,11 @@ const menu = {
             },
         },
         {
-            img: "Pilav ustu tavuk doner",
+            img: "Pilav ustu tavuk doner", // Sade Tavuk Döner
             name: {
-                ru: "Куриный Донер с Рисом",
-                tr: "Sade tavuk doner",
-                en: "Plain chicken doner"
+                ru: "Куриный Донер",
+                tr: "Sade Tavuk Döner",
+                en: "Plain Chicken Doner"
             },
             price: {
                 "100 gr": 190,
@@ -157,8 +157,8 @@ const menu = {
             img: "Kuzu pirzola",
             name: {
                 ru: "Бараньи Отбивные",
-                tr: "Kuzu pirzola",
-                en: "Lamb chops"
+                tr: "Kuzu Pirzola",
+                en: "Lamb Chops"
             },
             price: {
                 "1": 460,
@@ -173,8 +173,8 @@ const menu = {
             img: "Kuşbaşılı kaşarlı pıde",
             name: {
                 ru: "Пиде с Мясом и Сыром Кашар",
-                tr: "Kuşbaşılı kaşarlı pıde",
-                en: "Pita with meat cubes and kashar cheese"
+                tr: "Kuşbaşılı Kaşarlı Pide",
+                en: "Pita with Meat Cubes and Kashar Cheese"
             },
             price: {
                 "1": 240,
@@ -185,8 +185,8 @@ const menu = {
             img: "Kuşbaşılı pıde",
             name: {
                 ru: "Пиде с Мясом",
-                tr: "Kuşbaşılı pide",
-                en: "Pita wıth meat cubes"
+                tr: "Kuşbaşılı Pide",
+                en: "Pita with Meat Cubes"
             },
             price: {
                 "1": 210,
@@ -197,8 +197,8 @@ const menu = {
             img: "Kaşarlı pide",
             name: {
                 ru: "Пиде с Сыром Кашар",
-                tr: "Kaşarlı pide",
-                en: "Pita with kashar cheese"
+                tr: "Kaşarlı Pide",
+                en: "Pita with Kashar Cheese"
             },
             price: {
                 "1": 180,
@@ -209,8 +209,8 @@ const menu = {
             img: "Kıymalı pide",
             name: {
                 ru: "Пиде с Фаршем",
-                tr: "Kıymalı pide",
-                en: "Pita with ground meat"
+                tr: "Kıymalı Pide",
+                en: "Pita with Ground Meat"
             },
             price: {
                 "1": 180,
@@ -221,8 +221,8 @@ const menu = {
             img: "Karışık pide",
             name: {
                 ru: "Пиде Ассорти",
-                tr: "Karışık pide",
-                en: "Mixed pita"
+                tr: "Karışık Pide",
+                en: "Mixed Pita"
             },
             price: {
                 "1": 240,
@@ -233,8 +233,8 @@ const menu = {
             img: "Kıymalı kaşarlı pide",
             name: {
                 ru: "Пиде из Фарша и Сыром Кашар",
-                tr: "Kıymalı kaşarlı pide",
-                en: "Pita with kashar cheese andound meat"
+                tr: "Kıymalı Kaşarlı Pide",
+                en: "Pita with Kashar Cheese and Ground Meat"
             },
             price: {
                 "1": 210,
@@ -245,8 +245,8 @@ const menu = {
             img: "Sucuklu kaşarlı pide",
             name: {
                 ru: "Пиде с Колбасой",
-                tr: "Sucuklu kaşarlı pide",
-                en: "Pita with kashar cheese andound meat"
+                tr: "Sucuklu Kaşarlı Pide",
+                en: "Pita with Soujouk and Kashar Cheese"
             },
             price: {
                 "1": 210,
@@ -270,7 +270,7 @@ const menu = {
             img: "Cizburger",
             name: {
                 ru: "Чизбургер",
-                tr: "Cizburger",
+                tr: "Çizburger",
                 en: "Cheeseburger"
             },
             price: {
@@ -281,8 +281,8 @@ const menu = {
             img: "Et döner burger",
             name: {
                 ru: "Бургер с Мясным Донером",
-                tr: "Et döner burger",
-                en: "Meat doner burger"
+                tr: "Et Döner Burger",
+                en: "Meat Doner Burger"
             },
             price: {
                 "1": 240,
@@ -303,8 +303,8 @@ const menu = {
             img: "Tavuk döner Burger",
             name: {
                 ru: "Бургер с Куриным Донером",
-                tr: "Tavuk döner Burger",
-                en: "Chicken doner Burger"
+                tr: "Tavuk Döner Burger",
+                en: "Chicken Doner Burger"
             },
             price: {
                 "1": 185,
@@ -313,35 +313,23 @@ const menu = {
     ],
     kiramika: [
         {
-            img: "Kaşarlı mantar güveç",
+            img: "Et güveç",
             name: {
-                ru: "Грибная Запеканка с Чеддером",
-                tr: "Kaşarlı mantar güveç",
-                en: "Mushroom casserole with cheddar"
+                ru: "Мясная Запеканка",
+                tr: "Et Güveç",
+                en: "Meat Stew"
             },
             price: {
-                "1": 210,
-                "1.5": 305,
+                "1": 380,
+                "1.5": 570,
             },
-        },
-        {
-            img: "Kofte güveç",
-            name: {
-                ru: "Запеканка с Котлетами",
-                tr: "Kofte güveç",
-                en: "Meatball stew"
-            },
-            price: {
-                "1": 270,
-                "1.5": 405,
-            },
-        },
+        }
         {
             img: "Tavuk güveç",
             name: {
                 ru: "Куриная Запеканка",
-                tr: "Tavuk güveç",
-                en: "Chicken stew"
+                tr: "Tavuk Güveç",
+                en: "Chicken Stew"
             },
             price: {
                 "1": 260,
@@ -349,25 +337,38 @@ const menu = {
             },
         },
         {
-            img: "Et güveç",
+            img: "Kofte güveç",
             name: {
-                ru: "Мясная Запеканка",
-                tr: "Et güveç",
-                en: "Meat stew"
+                ru: "Запеканка с Котлетами",
+                tr: "Köfte Güveç",
+                en: "Meatball Stew"
             },
             price: {
-                "1": 380,
-                "1.5": 570,
+                "1": 270,
+                "1.5": 405,
             },
-        }
+        },
+        {
+            img: "Kaşarlı mantar güveç",
+            name: {
+                ru: "Грибная Запеканка с Сыром",
+                tr: "Kaşarlı Mantar Güveç",
+                en: "Stew with Mushroom and Kashar Cheese"
+            },
+            price: {
+                "1": 210,
+                "1.5": 305,
+            },
+        },
+
     ],
     pizza: [
         {
             img: "Karisik pizza",
             name: {
                 ru: "Пицца Ассорти",
-                tr: "Karisik pizza",
-                en: "Mexed pizza"
+                tr: "Karışık Pizza",
+                en: "Mixed Pizza"
             },
             price: {
                 "1": 190,
@@ -377,8 +378,8 @@ const menu = {
             img: "Sebzell pizza",
             name: {
                 ru: "Овощная Пицца",
-                tr: "Sebzell pizza",
-                en: "Vegetable pizza"
+                tr: "Sebzeli Pizza",
+                en: "Vegetable Pizza"
             },
             price: {
                 "1": 190,
@@ -388,8 +389,8 @@ const menu = {
             img: "Margarita pizza",
             name: {
                 ru: "Пицца Маргарита",
-                tr: "Margarita pizza",
-                en: "Margarita pizza"
+                tr: "Margarita Pizza",
+                en: "Margarita Pizza"
             },
             price: {
                 "1": 180,
@@ -401,8 +402,8 @@ const menu = {
             img: "Kapali Et Doner",
             name: {
                 ru: "Закрытый Донер с Мясом",
-                tr: "Etli kapalı döner ",
-                en: "Closed doner with meat"
+                tr: "Kapalı Et Döner ",
+                en: "Closed Doner with Meat"
             },
 
             price: {
@@ -414,8 +415,8 @@ const menu = {
             img: "Kapali Tavuk doner",
             name: {
                 ru: "Закрытый Донер с Курицей",
-                tr: "Tavuklu kapalı döner",
-                en: "Closed doner with chicken"
+                tr: "Kapalı Tavuk Döner",
+                en: "Closed Doner with Chicken"
             },
             price: {
                 "1": 260,
@@ -426,8 +427,8 @@ const menu = {
             img: "Et iskander",
             name: {
                 ru: "Мясной Искандер",
-                tr: "Et iskander",
-                en: "Meat iskander"
+                tr: "Et İskender",
+                en: "Meat Iskender"
             },
             price: {
                 "100 gr": 250,
@@ -439,8 +440,8 @@ const menu = {
             img: "Tavuk iskander",
             name: {
                 ru: "Куриный Искандер",
-                tr: "Tavuk iskander",
-                en: "Chicken iskander"
+                tr: "Tavuk İskender",
+                en: "Chicken Iskender"
             },
             price: {
                 "100 gr": 210,
@@ -451,9 +452,9 @@ const menu = {
         {
             img: "Beyti sarma",
             name: {
-                ru: "Кебаб-Бейти",
-                tr: "Beyti sarma",
-                en: "Beyti wrap"
+                ru: "Кебаб Бейти",
+                tr: "Beyti Sarma",
+                en: "Beyti Wrap"
             },
             price: {
                 "1": 280,
@@ -464,8 +465,8 @@ const menu = {
             img: "Et gobit",
             name: {
                 ru: "Мясной Гоббит",
-                tr: "Et gobit",
-                en: "Meat gobit"
+                tr: "Et Gobit",
+                en: "Meat Gobit"
             },
             price: {
                 "100 gr": 210,
@@ -477,8 +478,8 @@ const menu = {
             img: "Tavuk gobit",
             name: {
                 ru: "Куриный Гоббит",
-                tr: "Tavuk gobit",
-                en: "Chicken gobit"
+                tr: "Tavuk Gobit",
+                en: "Chicken Gobit"
             },
             price: {
                 "100 gr": 100,
@@ -490,8 +491,8 @@ const menu = {
             img: "Et durum",
             name: {
                 ru: "Мясная Шаурма ",
-                tr: "Et durum",
-                en: "Meat wrap"
+                tr: "Et Dürüm",
+                en: "Meat Wrap"
             },
             price: {
                 "100 gr": 210,
@@ -503,8 +504,8 @@ const menu = {
             img: "Tavuk dürüm",
             name: {
                 ru: "Шаурма с Курицей",
-                tr: "Tavuk dürüm",
-                en: "Chicken wrap"
+                tr: "Tavuk Dürüm",
+                en: "Chicken Wrap"
             },
             price: {
                 "100 gr": 100,
@@ -518,8 +519,8 @@ const menu = {
             img: "Çoban salata",
             name: {
                 ru: "Салат Чобан",
-                tr: "Çoban salata",
-                en: "Shepherd salad"
+                tr: "Çoban Salata",
+                en: "Shepherd Salad"
             },
             price: {
                 "1": 95,
@@ -529,8 +530,8 @@ const menu = {
             img: "Mevsim salata",
             name: {
                 ru: "Сезонный Салат",
-                tr: "Mevsim salata",
-                en: "Seasonal salad"
+                tr: "Mevsim Salata",
+                en: "Seasonal Salad"
             },
             price: {
                 "1": 95,
@@ -540,8 +541,8 @@ const menu = {
             img: "Patlıcan salatası",
             name: {
                 ru: "Салат из Баклажанов",
-                tr: "Patlıcan salatası",
-                en: "Eegplant salad"
+                tr: "Patlıcan Salatası",
+                en: "Eggplant Salad"
             },
             price: {
                 "1": 95,
@@ -588,8 +589,8 @@ const menu = {
             img: "Coca cola",
             name: {
                 ru: "Кока Кола",
-                tr: "Coca cola",
-                en: "Coca cola"
+                tr: "Coca Cola",
+                en: "Coca Cola"
             },
             price: {
                 "1": 45,
@@ -610,7 +611,7 @@ const menu = {
             img: "Çayı",
             name: {
                 ru: "Чай",
-                tr: "Çayı",
+                tr: "Çay",
                 en: "Tea"
             },
             price: {
@@ -621,8 +622,8 @@ const menu = {
             img: "Meyve suları",
             name: {
                 ru: "Фруктовые Соки",
-                tr: "Meyve suları",
-                en: "fruit juices"
+                tr: "Meyve Suları",
+                en: "Fruit Juices"
             },
             price: {
                 "1": 45,
@@ -654,8 +655,8 @@ const menu = {
             img: "Yayık ayran",
             name: {
                 ru: "Домашний Айран",
-                tr: "Yayık ayran",
-                en: "Buttermılk drınk"
+                tr: "Yayık Ayran",
+                en: "Buttermilk Drink"
             },
             price: {
                 "1": 40,
@@ -665,8 +666,8 @@ const menu = {
             img: "Meyvelı soda",
             name: {
                 ru: "Фруктовая Газировка",
-                tr: "Meyvelı soda",
-                en: "Fruit sparkling water"
+                tr: "Meyveli Soda",
+                en: "Fruit Sparkling Water"
             },
             price: {
                 "1": 25,
@@ -677,7 +678,7 @@ const menu = {
             name: {
                 ru: "Сода",
                 tr: "Soda",
-                en: "sparkling water"
+                en: "Sparkling Water"
             },
             price: {
                 "1": 25,
@@ -699,7 +700,7 @@ const menu = {
             name: {
                 ru: "Шалгам",
                 tr: "Şalgam",
-                en: "Şalgam"
+                en: "Beet"
             },
             price: {
                 "1": 30,
