@@ -1,0 +1,608 @@
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+button {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: 0.4s;
+
+  &:hover {
+    opacity: 1;
+    
+  }
+}
+
+body {
+  --color1: #F8F8F8;
+  --color2: #121212;
+  --color3: rgb(151, 21, 21);
+
+  color: var(--color1);
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@keyframes basketButton {
+  0%{
+    background-color: var(--color2);
+  }
+  100%{
+    background-color: var(--color3);
+  }
+}
+
+
+header.main {
+  height: 100vh;
+  background-image: url(../img/header_main.jpg);
+  background-position: center center;
+  background-size: cover;
+
+  & .container {
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .header__elements {
+      text-align: center;
+
+      & img {
+        margin-bottom: 20px;
+        max-width: 100px;
+      }
+
+      & h1 {
+        margin-bottom: 4px;
+        font-size: 36px;
+        line-height: 100%;
+      }
+
+      & p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 100%;
+        font-weight: 800;
+      }
+
+      & hr {
+        margin: 0 auto 20px auto;
+        max-width: 160px;
+        height: 1px;
+        background-color: var(--color1);
+        border: none;
+      }
+
+      & .leng-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 20px;
+
+        & span {
+          font-size: 20px;
+          line-height: 100%;
+          font-weight: 400;
+        }
+      }
+
+      & .leng-links {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+
+        & a {
+          height: 50px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          line-height: 100%;
+          font-weight: 500;
+          text-decoration: none;
+          background-color: var(--color2);
+          border: 1px solid var(--color1);
+          color: var(--color1);
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+body.menu {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  background-image: url(../img/header_main.jpg);
+  background-position: center center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+
+  & nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.8);
+    z-index: 10;
+
+    & .container {
+      padding: 0 20px 0;
+
+      & .nav__elements {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .nav__links {
+          display: flex;
+          gap: 20px;
+
+          & a {
+            font-size: 20px;
+            line-height: 100%;
+            font-weight: 400;
+            text-decoration: none;
+            color: var(--color1);
+          }
+
+          & hr {
+            width: 1px;
+            background-color: var(--color1);
+          }
+        }
+
+        & .basket {
+          font-size: 24px;
+          line-height: 100%;
+          color: var(--color1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 60px;
+          background-color: var(--color2);
+          border: 3px solid var(--color1);
+          border-radius: 100%;
+          z-index: 2;
+          
+        }
+        
+        & .basket_have{
+          animation: basketButton 1s infinite alternate ease-in-out;
+          
+        }
+        
+
+        & .button_moveLeft {
+          transform: translateX(-48px);
+        }
+
+        & .basket-clouse {
+          position: fixed;
+          width: 40px;
+          height: 20px;
+          top: 30px;
+          right: 20px;
+          z-index: 1;
+          background-color: transparent;
+          border: none;
+
+
+          & span {
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--color1);
+            display: block;
+            left: 0;
+            transition: 0.5s;
+            opacity: 0;
+
+            &:nth-child(1) {
+              top: 9px;
+            }
+
+            &:nth-child(2) {
+              top: 9px;
+            }
+
+          }
+        }
+
+        & .basket-clouse_active {
+
+          & span {
+            opacity: 1;
+
+            &:nth-child(1) {
+              top: 9px;
+              transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+              top: 9px;
+              transform: rotate(-45deg);
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  & h1 {
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  & .categories-list {
+    padding: 8px 20px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.8);
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+
+    & button {
+      flex-shrink: 0;
+      padding: 8px;
+      border: 1px solid var(--color2);
+      background-color: var(--color2);
+      color: var(--color1);
+      border-radius: 8px;
+      text-transform: uppercase;
+    }
+
+    & button._active {
+      background-color: var(--color1);
+      color: var(--color2);
+    }
+  }
+
+  & .dishes-list {
+    background-color: rgba(24, 24, 24, 0.4);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    transition: 0.5s;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+
+    & .dishes-card {
+      display: flex;
+      flex-direction: column;
+      width: calc(100vw - 60px);
+      max-width: 340px;
+      border: 1px solid var(--color1);
+      border-radius: 8px;
+      overflow: hidden;
+      flex-shrink: 0;
+      transition: 0.5s;
+
+
+
+      & img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+
+      & .dishes-card__info {
+        background-color: var(--color2);
+        padding: 20px 10px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+        transition: 0.5s;
+
+        & h2 {
+          font-size: 20px;
+          line-height: 100%;
+          margin-bottom: 10px;
+          font-weight: 700;
+        }
+
+        & p {
+          font-size: 14px;
+          line-height: 140%;
+        }
+
+        & .dishes-card__management {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          & .portion-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0px;
+
+            & p {
+              font-size: 16px;
+              display: flex;
+              flex-direction: column;
+
+              & span {
+                font-weight: 400;
+                display: flex;
+                gap: 5px;
+
+                &.portion-name {
+                  font-weight: 600;
+                }
+
+                &.portion-cost {
+                  font-weight: 600;
+                }
+              }
+            }
+
+            & div {
+              display: flex;
+              gap: 10px;
+
+
+              & button {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid var(--color1);
+                font-size: 20px;
+                border-radius: 4px;
+                background-color: var(--color1);
+                color: var(--color2);
+
+                &.portion-plus {
+                  background-color: var(--color3);
+                  border-color: var(--color3);
+                }
+              }
+
+              & span {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid var(--color1);
+                font-size: 20px;
+                border-radius: 4px;
+                background-color: var(--color2);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .change {
+      border: 1px solid var(--color3);
+      /* Пример стиля для класса change */
+
+      & .dishes-card__info {
+        background-color: rgb(126, 78, 78);
+      }
+    }
+  }
+}
+
+
+.basket-box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--color2);
+  top: 0;
+  left: 100%;
+  transition: 0.5s;
+  z-index: 1;
+  padding: 80px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px;
+
+  & h3{
+    font-size: 24px;
+  }
+
+  & .basket-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & .basket-card {
+      flex-shrink: 0;
+      width: 100%;
+      border: 1px solid;
+      border-radius: 8px;
+      padding: 4px;
+      display: flex;
+      position: relative;
+      max-width: 600px;
+      
+      & .basket-card__info{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        & img {
+          width: calc(100% - 140px);
+          max-width: calc(100% - 140px);
+          border-radius: 8px;
+        }
+        & .dishes-card__description{
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+
+          & h2{
+            font-size: 18px;
+            & i{
+              font-weight: 300;
+            }
+          }
+          & span{
+            font-weight: 600;
+          }
+        }
+      }
+     
+      & .basket-card__management {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        gap: 4px;
+
+        & button {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--color1);
+          font-size: 20px;
+          border-radius: 4px;
+          background-color: var(--color1);
+          color: var(--color2);
+
+          &.portion-plus {
+            background-color: var(--color3);
+            border-color: var(--color3);
+          }
+        }
+
+        & span {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--color1);
+          font-size: 20px;
+          border-radius: 4px;
+          background-color: var(--color2);
+        }
+      }
+
+      & .basket-card__cost{
+        position: absolute;
+        top: 78px;
+        width: 128px;
+        display: flex;
+        flex-direction: column;
+        color: var(--color1);
+        right: 4px;
+
+        & span{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  & .basket-box__total-price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color3);
+    color: var(--color2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 24px;
+    border-radius: 10px 10px 0 0;
+
+    & span{
+      font-weight: 600;
+    }
+  }
+
+}
+
+.basket-box_open {
+  left: 0;
+
+}
+
+._hide {
+  opacity: 0;
+}
+
+.annonce-block{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color2);
+  padding: 20px;
+  width: 70vw;
+  max-width: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 0 20px #12121275;
+  transition: 0.5s;
+
+  & h2{
+    text-align: center;
+  }
+
+  & p{
+    line-height: 120%;
+  }
+  & button{
+    padding: 10px 40px;
+    background-color: var(--color3);
+    border-radius: 6px;
+    color: var(--color2);
+    font-size: 16px;
+  }
+}
+.displayNone{
+  display: none;
+}
