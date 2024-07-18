@@ -2,48 +2,174 @@ const dishesList = [
   // Начало категории "Основные блюда"
   {
     category: {
-      ru: 'основные блюда',
-      tr: 'ana yemekler',
-      en: 'main dishes',
+      ru: 'Дёнеры с мясом и курицей',
+      tr: 'Et ve Tavuk Dönerler',
+      en: 'Meat and Chicken Doners',
     },
     dishes: [
       // Начало блюда 1
       {
-        img: '',
-        name: {
-          ru: 'Грибная вырезка',
-          tr: 'Mantar bonfile',
-          en: 'Mushroom Tenderloin',
+        "img": "",
+        "name": {
+          "ru": "Простой мясной донер",
+          "tr": "Sade Et Döner",
+          "en": "Plain Meat Doner"
         },
-        description: {
-          ru: 'Говяжья вырезка на гриле с грибным соусом и овощным гарниром',
-          tr: 'Mantar soslu ve sebze garnitürlü ızgara dana bonfile',
-          en: 'Grilled beef tenderloin with mushroom sauce and vegetable garnish',
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
         },
-        portionList: [
-          { name: '1', cost: '6000' },
-        ],
+        "portionList": [
+          { "name": "100 gr", "cost": "250" },
+          { "name": "150 gr", "cost": "375" },
+          { "name": "200 gr", "cost": "500" }
+        ]
       },
       // Конец блюда 1
       // Начало блюда 2
       {
-        img: '',
-        name: {
-          ru: 'Кафе де Пари',
-          tr: 'Paris Kafe',
-          en: 'Café de Paris',
+        "img": "",
+        "name": {
+          "ru": "Мясной донер с рисом",
+          "tr": "Pilav Üstü Et Döner",
+          "en": "Meat Doner with Rice"
         },
-        description: {
-          ru: 'Нарезанная ломтиками говяжья вырезка на гриле с соусом "Кафе де Пари", жареным картофелем и салатом "Цезарь',
-          tr: 'Julienne şeritler halinde kesilmiş ızgara dana bonfile, Café de Paris sos, kavrulmuş patates ve Sezar salatası ile',
-          en: 'Julienne sliced grilled beef tenderloin with Café de Paris sauce, roast potatoes and Caesar salad',
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
         },
-        portionList: [
-          { name: '1', cost: '7000' },
-          { name: '1.5', cost: '9000' },
-        ],
+        "portionList": [
+          { "name": "100 gr", "cost": "250" },
+          { "name": "150 gr", "cost": "375" },
+          { "name": "200 gr", "cost": "500" }
+        ]
       },
       // Конец блюда 2
+      {
+        "img": "",
+        "name": {
+          "ru": "Мясной Искендер",
+          "tr": "Et İskender",
+          "en": "Meat Iskender"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "250" },
+          { "name": "150 gr", "cost": "375" },
+          { "name": "200 gr", "cost": "500" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Закрытый донер с мясом",
+          "tr": "Kapalı Döner Et",
+          "en": "Closed Doner Meat"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "280" },
+          { "name": "1.5", "cost": "420" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Закрытый донер с курицей",
+          "tr": "Kapalı Döner Tavuk",
+          "en": "Closed Doner Chicken"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "260" },
+          { "name": "1.5", "cost": "390" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Искендер Кефте",
+          "tr": "İskender Köfte",
+          "en": "Iskender Meatball"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "150 gr", "cost": "250" },
+          { "name": "200 gr", "cost": "375" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Простой куриный донер",
+          "tr": "Sade Tavuk Döner",
+          "en": "Plain Chicken Doner"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "190" },
+          { "name": "150 gr", "cost": "285" },
+          { "name": "200 gr", "cost": "380" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный донер с рисом",
+          "tr": "Pilav Üstü Tavuk Döner",
+          "en": "Chicken Doner with Rice"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "190" },
+          { "name": "150 gr", "cost": "285" },
+          { "name": "200 gr", "cost": "380" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный Искендер",
+          "tr": "Tavuk İskender",
+          "en": "Chicken Iskender"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "210" },
+          { "name": "150 gr", "cost": "315" },
+          { "name": "200 gr", "cost": "420" }
+        ]
+      },
     ],
   },
   // Конец категории "Основные блюда"

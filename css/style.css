@@ -273,7 +273,7 @@ body.menu {
     & button {
       flex-shrink: 0;
       padding: 8px;
-      border: 1px solid var(--color2);
+      border: 1px solid var(--color1);
       background-color: var(--color2);
       color: var(--color1);
       border-radius: 8px;
@@ -585,7 +585,7 @@ body.menu {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-shadow: 0 0 20px #12121275;
+  border: 1px solid var(--color1);
   transition: 0.5s;
 
   & h2{
@@ -599,7 +599,7 @@ body.menu {
     padding: 10px 40px;
     background-color: var(--color3);
     border-radius: 6px;
-    color: var(--color2);
+    color: var(--color1);
     font-size: 16px;
   }
 }
