@@ -2,6 +2,7 @@ import dishesList from './dataBase.js';
 
 // Получение текущего языка страницы
 const lang = document.documentElement.lang;
+const currencySymbol = '₺';
 
 const words = {
   portion: {
@@ -84,7 +85,7 @@ function renderDishes(dishes, categoryName) {
               <div class="dishes-card__management">
                 ${dish.portionList.map(portion => `
                   <div class="portion-name">
-                    <p><span>${words.portion[lang]} <span class="portion-name">${portion.name}</span> - </span><span>$ <span class="portion-cost">${portion.cost}</span></span></p>
+                    <p><span>${words.portion[lang]} <span class="portion-name">${portion.name}</span> - </span><span> <span class="portion-cost">${portion.cost}${currencySymbol}</span></span></p>
                     <div>
                       <button class="portion-minus"><i class="fa-solid fa-minus"></i></button>
                       <span class="portion-number">0</span>
@@ -225,7 +226,7 @@ function updateBasket() {
           <div class="dishes-card__description">
             <h2>${item.name}</h2>
             <h2><i>'${dishObj.name.en}'</i></h2>
-            <p><span>${item.portion}</span> ${words.portion[lang]} $ ${item.cost}</p>  
+            <p><span>${item.portion}</span> ${words.portion[lang]} ${item.cost} ${currencySymbol}</p>  
           </div>
         </div>
         <div class="basket-card__management">
@@ -234,7 +235,7 @@ function updateBasket() {
           <button class="portion-plus"><i class="fa-solid fa-plus"></i></button>
         </div>
         <p class="basket-card__cost" >
-          ${words.cost[lang]} <span>${item.totalCost}$</span>
+          ${words.cost[lang]} <span>${item.totalCost}${currencySymbol}</span>
         </p>
       `;
 
@@ -348,5 +349,6 @@ basketButtonClouse.onclick = function () {
 }
 
 document.querySelector('#annonce-block-clouse').onclick = function(){
-  document.querySelector('.annonce-block').classList.add('displayNone')
+  document.querySelector('.annonce-block').classList.add('displayNone');
+  document.querySelector('body').classList.remove('active_no');
 }

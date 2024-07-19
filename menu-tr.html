@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHAKESPEARE</title>
+  <title>İskenderbeyi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -14,7 +14,7 @@
   <script type="module" src="./js/render.js" defer></script>
 </head>
 
-<body class="menu">
+<body class="menu active_no">
   <nav>
     <div class="container">
       <div class="nav__elements">
@@ -32,24 +32,25 @@
     </div>
   </nav>
   <main>
-    <h1>MENÚ</h1>
+    <h1>MENÜ</h1>
     <div class="categories-list" id="categoriesList"> <!--JS--> </div>
     <div class="dishes-list"></div>
 
     <div class="basket-box">
-      <h3>Su pedido:</h3>
+      <h3>Siparişiniz:</h3>
       <div class="basket-box__list basket-list">
-        Vacío
+        Boş
       </div>
       <div class="basket-box__total-price">
-        Total: $<span id="total-price"></span>
+        Total: <span id="total-price"></span>₺
       </div>
     </div>
 
     <div class="annonce-block">
-      <h2>¡Atención!</h2>
+      <h2>Dikkat!</h2>
       <p>
-        Seleccione los platos deseados, luego invite al camarero y enséñele la cesta.      </p>
+        İstenilen yemekleri seçin, ardından garsonu davet edin ve ona sepeti gösterin
+      </p>
       <button id="annonce-block-clouse">Ok</button>
     </div>
   </main>

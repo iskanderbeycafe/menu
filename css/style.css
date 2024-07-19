@@ -15,14 +15,15 @@ button {
 
   &:hover {
     opacity: 1;
-    
+
   }
 }
 
 body {
   --color1: #F8F8F8;
   --color2: #121212;
-  --color3: rgb(151, 21, 21);
+  --color3: rgb(204, 121, 12);
+  --color4: rgb(151, 93, 17);
 
   color: var(--color1);
 
@@ -32,10 +33,11 @@ body {
 }
 
 @keyframes basketButton {
-  0%{
+  0% {
     background-color: var(--color2);
   }
-  100%{
+
+  100% {
     background-color: var(--color3);
   }
 }
@@ -183,14 +185,14 @@ body.menu {
           border: 3px solid var(--color1);
           border-radius: 100%;
           z-index: 2;
-          
+
         }
-        
-        & .basket_have{
+
+        & .basket_have {
           animation: basketButton 1s infinite alternate ease-in-out;
-          
+
         }
-        
+
 
         & .button_moveLeft {
           transform: translateX(-48px);
@@ -281,8 +283,9 @@ body.menu {
     }
 
     & button._active {
-      background-color: var(--color1);
-      color: var(--color2);
+      background-color: var(--color3);
+      color: var(--color1);
+      border-color: var(--color3);
     }
   }
 
@@ -294,8 +297,12 @@ body.menu {
     overflow-x: auto;
     transition: 0.5s;
 
-    &::-webkit-scrollbar {
-      height: 0;
+    &::-webkit-scrollbar{
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: var(--color3);
+      border-radius: 6px;
     }
 
     & .dishes-card {
@@ -417,7 +424,7 @@ body.menu {
       /* Пример стиля для класса change */
 
       & .dishes-card__info {
-        background-color: rgb(126, 78, 78);
+        background-color: var(--color4);
       }
     }
   }
@@ -439,7 +446,7 @@ body.menu {
   gap: 20px;
   padding-bottom: 50px;
 
-  & h3{
+  & h3 {
     font-size: 24px;
   }
 
@@ -449,6 +456,16 @@ body.menu {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 20px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color3);
+      border-radius: 6px;
+    }
 
     & .basket-card {
       flex-shrink: 0;
@@ -459,34 +476,38 @@ body.menu {
       display: flex;
       position: relative;
       max-width: 600px;
-      
-      & .basket-card__info{
+
+      & .basket-card__info {
         display: flex;
         flex-direction: column;
         gap: 8px;
         width: 100%;
+
         & img {
           width: calc(100% - 140px);
           max-width: calc(100% - 140px);
           border-radius: 8px;
         }
-        & .dishes-card__description{
+
+        & .dishes-card__description {
           display: flex;
           flex-direction: column;
           gap: 6px;
 
-          & h2{
+          & h2 {
             font-size: 18px;
-            & i{
+
+            & i {
               font-weight: 300;
             }
           }
-          & span{
+
+          & span {
             font-weight: 600;
           }
         }
       }
-     
+
       & .basket-card__management {
         display: flex;
         flex-direction: row;
@@ -526,7 +547,7 @@ body.menu {
         }
       }
 
-      & .basket-card__cost{
+      & .basket-card__cost {
         position: absolute;
         top: 78px;
         width: 128px;
@@ -535,20 +556,20 @@ body.menu {
         color: var(--color1);
         right: 4px;
 
-        & span{
+        & span {
           font-weight: 600;
         }
       }
     }
   }
 
-  & .basket-box__total-price{
+  & .basket-box__total-price {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: var(--color3);
-    color: var(--color2);
+    color: var(--color1);
     height: 50px;
     display: flex;
     align-items: center;
@@ -556,7 +577,7 @@ body.menu {
     font-size: 24px;
     border-radius: 10px 10px 0 0;
 
-    & span{
+    & span {
       font-weight: 600;
     }
   }
@@ -572,7 +593,7 @@ body.menu {
   opacity: 0;
 }
 
-.annonce-block{
+.annonce-block {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -588,21 +609,28 @@ body.menu {
   border: 1px solid var(--color1);
   transition: 0.5s;
 
-  & h2{
+  & h2 {
     text-align: center;
   }
 
-  & p{
+  & p {
     line-height: 120%;
   }
-  & button{
+
+  & button {
     padding: 10px 40px;
     background-color: var(--color3);
     border-radius: 6px;
     color: var(--color1);
     font-size: 16px;
+    pointer-events: visible;
   }
 }
-.displayNone{
+
+.displayNone {
   display: none;
+}
+
+.active_no {
+  pointer-events: none;
 }
