@@ -174,108 +174,239 @@ const dishesList = [
   },
   // Конец категории "Основные блюда"
 
-  // Начало категории "Закуски"
+  // Начало категории "Пиде"
   {
     category: {
-      ru: 'закуски',
-      tr: 'mezeler',
-      en: 'snacks',
+      ru: 'пиде',
+      tr: 'pideler',
+      en: 'pitas',
     },
     dishes: [
-      // Начало закуски 1
       {
-        img: '',
-        name: {
-          ru: 'Сырная тарелка',
-          tr: 'Peynir tabağı',
-          en: 'Cheese Platter',
+        "img": "",
+        "name": {
+          "ru": "Пиде с мясным фаршем",
+          "tr": "Kıymalı Pide",
+          "en": "Pita with Ground Meat"
         },
-        description: {
-          ru: 'Импортные и местные сорта сыра, сушеные абрикосы, грецкие орехи, оливки и гризи',
-          tr: 'İthal ve yerli peynirler, kuru kayısı, ceviz, zeytin ve grisie',
-          en: 'Imported and local cheese varieties, dried apricots, walnuts, olives and grisi',
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
         },
-        portionList: [
-          { name: '1', cost: '2700' },
-        ],
+        "portionList": [
+          { "name": "1", "cost": "180" },
+          { "name": "1.5", "cost": "270" }
+        ]
       },
-      // Конец закуски 1
-      // Начало закуски 2
       {
-        img: '',
-        name: {
-          ru: 'Тартанка с креветками из авокадо',
-          tr: 'Avokado karidesli tartanka',
-          en: 'Avocado Prawn Tartine',
+        "img": "",
+        "name": {
+          "ru": "Пиде с кашаром",
+          "tr": "Kaşarlı Pide",
+          "en": "Pita with Kashar Cheese"
         },
-        description: {
-          ru: 'На ломтике хлеба из закваски, паштет из свежего авокадо и соте из креветок в кресс-масле, с маринованными арбузными каперсами',
-          tr: 'Bir dilim ekşi mayalı ekmek, taze avokado ezmesi ve su teresinde sotelenmiş karides, kapari turşusu karpuz ile',
-          en: 'On a slice of sourdough bread, fresh avocado pate, and sautéed shrimp in cress oil, with pickled watermelon capers',
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
         },
-        portionList: [
-          { name: '1', cost: '3200' },
-        ],
+        "portionList": [
+          { "name": "1", "cost": "180" },
+          { "name": "1.5", "cost": "270" }
+        ]
       },
-      // Конец закуски 2
+      {
+        "img": "",
+        "name": {
+          "ru": "Пиде с кусочками мяса",
+          "tr": "Kuşbaşılı Pide",
+          "en": "Pita with Meat Cubes"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "210" },
+          { "name": "1.5", "cost": "305" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Пиде с кашаром и мясным фаршем",
+          "tr": "Kıymalı Kaşarlı Pide",
+          "en": "Pita with Kashar Cheese and Ground Meat"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "210" },
+          { "name": "1.5", "cost": "305" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Пиде с кусочками мяса и кашаром",
+          "tr": "Kuşbaşılı Kaşarlı Pide",
+          "en": "Pita with Meat Cubes and Kashar Cheese"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "240" },
+          { "name": "1.5", "cost": "360" }
+        ]
+      }, 
+      {
+        "img": "",
+        "name": {
+          "ru": "Пиде с суджуком и кашаром",
+          "tr": "Sucuklu Kaşarlı Pide",
+          "en": "Pita with Soujouk and Kashar Cheese"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "210" },
+          { "name": "1.5", "cost": "305" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Смешанная Пиде",
+          "tr": "Karışık Pide",
+          "en": "Mixed Pita"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "230" },
+          { "name": "1.5", "cost": "345" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Лахмаджун",
+          "tr": "Lahmacun",
+          "en": "Lahmacun"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "2", "cost": "190" }
+        ]
+      },                                            
     ],
   },
-  // Конец категории "Закуски"
+  // Конец категории "Пиде"
 
-  // Начало категории "Напитки"
+  // Начало категории "тушеное мясо"
   {
     category: {
-      ru: 'напитки',
-      tr: 'içecekler',
-      en: 'drinks',
+      ru: 'тушеное мясо',
+      tr: 'güveçler',
+      en: 'stews',
     },
     dishes: [
-      // Начало напитка 1
       {
-        img: '',
-        name: {
-          ru: 'Аффогато',
-          tr: 'Affogato',
-          en: 'Affogato',
+        "img": "",
+        "name": {
+          "ru": "Мясное рагу",
+          "tr": "Et Güveç",
+          "en": "Meat Stew"
         },
-        description: {
-          ru: 'С ванильным мороженым и эспрессо',
-          tr: 'Vanilyalı dondurma ve espresso ile',
-          en: 'With vanilla ice cream and espresso',
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
         },
-        portionList: [
-          { name: '1', cost: '2000' },
-        ],
+        "portionList": [
+          { "name": "1", "cost": "380" },
+          { "name": "1.5", "cost": "570" }
+        ]
       },
-      // Конец напитка 1
-      // Начало напитка 2
       {
-        img: '',
-        name: {
-          ru: 'Кафе Мокко',
-          tr: 'Kafe Mocha',
-          en: 'Cafe Mocha',
+        "img": "",
+        "name": {
+          "ru": "Куриное рагу",
+          "tr": "Tavuk Güveç",
+          "en": "Chicken Stew"
         },
-        description: {
-          ru: 'Эспрессо, молоко, шоколад',
-          tr: 'Espresso, süt, çikolata',
-          en: 'Espresso, Milk, Chocolate',
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
         },
-        portionList: [
-          { name: '1', cost: '1800' },
-        ],
+        "portionList": [
+          { "name": "1", "cost": "260" },
+          { "name": "1.5", "cost": "390" }
+        ]
       },
-      // Конец напитка 2
+      {
+        "img": "",
+        "name": {
+          "ru": "Рагу с фрикадельками",
+          "tr": "Köfte Güveç",
+          "en": "Meatball Stew"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "270" },
+          { "name": "1.5", "cost": "405" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Рагу с грибами и кашаром",
+          "tr": "Kaşarlı Mantar Güveç",
+          "en": "Stew with Mushroom and Kashar Cheese"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "210" },
+          { "name": "1.5", "cost": "305" }
+        ]
+      },                        
     ],
   },
-  // Конец категории "Напитки"
+  // Конец категории "тушеное мясо"
 
   // Начало категории "Алкогольные напитки"
   {
     category: {
-      ru: 'алкогольные напитки',
-      tr: 'alkollü içecekler',
-      en: 'alcoholic drinks',
+      ru: 'бургеры',
+      tr: 'burgerler',
+      en: 'burgers',
     },
     dishes: [
       // Начало алкогольного напитка 1
