@@ -401,7 +401,7 @@ const dishesList = [
   },
   // Конец категории "тушеное мясо"
 
-  // Начало категории "Алкогольные напитки"
+  // Начало категории "бургеры"
   {
     category: {
       ru: 'бургеры',
@@ -409,189 +409,196 @@ const dishesList = [
       en: 'burgers',
     },
     dishes: [
-      // Начало алкогольного напитка 1
       {
-        img: '',
-        name: {
-          ru: 'Carlsberg 33 cl',
-          tr: 'Carlsberg 33 cl',
-          en: 'Carlsberg 33 cl',
+        "img": "",
+        "name": {
+          "ru": "Гамбургер",
+          "tr": "Hamburger",
+          "en": "Hamburger"
         },
-        description: {
-          ru: '',
-          tr: '',
-          en: '',
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
         },
-        portionList: [
-          { name: '33ml', cost: '1200' },
-        ],
+        "portionList": [
+          { "name": "1", "cost": "185" }
+        ]
       },
-      // Конец алкогольного напитка 1
-      // Начало алкогольного напитка 2
       {
-        img: '',
-        name: {
-          ru: 'Tuborg Unfiltered 50 cl',
-          tr: 'Tuborg Unfiltered 50 cl',
-          en: 'Tuborg Unfiltered 50 cl',
+        "img": "",
+        "name": {
+          "ru": "Чизбургер",
+          "tr": "Çizburger",
+          "en": "Cheeseburger"
         },
-        description: {
-          ru: '',
-          tr: '',
-          en: '',
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
         },
-        portionList: [
-          { name: '50ml', cost: '1600' },
-        ],
+        "portionList": [
+          { "name": "1", "cost": "220" }
+        ]
       },
-      // Конец алкогольного напитка 2
+      {
+        "img": "",
+        "name": {
+          "ru": "Бургер с куриным донером",
+          "tr": "Tavuk Döner Burger",
+          "en": "Chicken Doner Burger"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "185" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Бургер с мясным донером",
+          "tr": "Et Döner Burger",
+          "en": "Meat Doner Burger"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "240" }
+        ]
+      }     
     ],
   },
-  // Конец категории "Алкогольные напитки"
+  // Конец категории "бургеры"
+   // Начало категории "пиццы"
+   {
+    category: {
+      ru: 'пиццы',
+      tr: 'pizzalar',
+      en: 'pizzas',
+    },
+    dishes: [
+      {
+        "img": "",
+        "name": {
+          "ru": "Пицца Маргарита",
+          "tr": "Margarita Pizza",
+          "en": "Margarita Pizza"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "180" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Смешанная пицца",
+          "tr": "Karışık Pizza",
+          "en": "Mixed Pizza"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "190" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Овощная пицца",
+          "tr": "Sebzeli Pizza",
+          "en": "Vegetable Pizza"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "190" }
+        ]
+      }   
+    ],
+  },
+  // Конец категории "пиццы"
+     // Начало категории "пиццы"
+     {
+      category: {
+        ru: 'салаты',
+        tr: 'salatalar',
+        en: 'salad',
+      },
+      dishes: [
+        {
+          "img": "",
+          "name": {
+            "ru": "Салат пастуха",
+            "tr": "Çoban Salata",
+            "en": "Shepherd Salad"
+          },
+          "description": {
+            "ru": "",
+            "tr": "",
+            "en": ""
+          },
+          "portionList": [
+            { "name": "1", "cost": "95" }
+          ]
+        },
+        {
+          "img": "",
+          "name": {
+            "ru": "Сезонный салат",
+            "tr": "Mevsim Salata",
+            "en": "Salad with Season's Vegetables"
+          },
+          "description": {
+            "ru": "",
+            "tr": "",
+            "en": ""
+          },
+          "portionList": [
+            { "name": "1", "cost": "95" }
+          ]
+        },
+        {
+          "img": "",
+          "name": {
+            "ru": "Салат из баклажанов",
+            "tr": "Patlıcan Salatası",
+            "en": "Eggplant Salad"
+          },
+          "description": {
+            "ru": "",
+            "tr": "",
+            "en": ""
+          },
+          "portionList": [
+            { "name": "1", "cost": "95" }
+          ]
+        },        
+      ],
+    },
+    // Конец категории "пиццы"
+  
 ];
 
 
 
-//       tr: '',
-//       en: 'snacks',
-//     },
-//     dishes: [
-//       // Начало закуски 1
-//       {
-//         img: '',
-//         name: {
-//           ru: 'Сырная тарелка',
-//           tr: '',
-//           en: 'Chetre Platter',
-//         },
-//         dtrcription: {
-//           ru: 'Импортные и местные сорта сыра, сушеные абрикосы, грецкие орехи, оливки и гризи',
-//           tr: '',
-//           en: 'Imported and local chetre varietitr, dried apricots, walnuts, olivtr and grisi',
-//         },
-//         portionList: [
-//           { name: '1', cost: '2700' },
-//         ],
-//       },
-//       // Конец закуски 1
-//       // Начало закуски 2
-//       {
-//         img: '',
-//         name: {
-//           ru: 'Тартанка с креветками из авокадо',
-//           tr: 'Avokado karidesli tartanka',
-//           en: 'Avocado Prawn Tartine',
-//         },
-//         dtrcription: {
-//           ru: 'На ломтике хлеба из закваски, паштет из свежего авокадо и соте из креветок в кресс-масле, с маринованными арбузными каперсами',
-//           tr: 'Bir dilim ekşi mayalı ekmek, taze avokado ezmesi ve su teresinde sotelenmiş karides, kapari turşusu karpuz ile',
-//           en: 'On a slice of sourdough bread, frtrh avocado pate, and sautéed shrimp in crtrs oil, with pickled watermelon capers',
-//         },
-//         portionList: [
-//           { name: '1', cost: '3200' },
-//         ],
-//       },
-//       // Конец закуски 2
-//     ],
-//   },
-//   // Конец категории "Закуски"
-
-//   // Начало категории "Напитки"
-//   {
-//     category: {
-//       ru: 'напитки',
-//       tr: 'içecekler',
-//       en: 'drinks',
-//     },
-//     dishes: [
-//       // Начало напитка 1
-//       {
-//         img: '',
-//         name: {
-//           ru: 'Аффогато',
-//           tr: 'Affogato',
-//           en: 'Affogato',
-//         },
-//         dtrcription: {
-//           ru: 'С ванильным мороженым и эспрессо',
-//           tr: 'Vanilyalı dondurma ve espresso kahve ile',
-//           en: 'With vanilla ice cream and trprtrso',
-//         },
-//         portionList: [
-//           { name: '1', cost: '2000' },
-//         ],
-//       },
-//       // Конец напитка 1
-//       // Начало напитка 2
-//       {
-//         img: '',
-//         name: {
-//           ru: 'Кафе Мокко',
-//           tr: 'Kafe Mocha',
-//           en: 'Cafe Mocha',
-//         },
-//         dtrcription: {
-//           ru: 'Эспрессо, молоко, шоколад',
-//           tr: 'Espresso, süt, çikolata',
-//           en: 'trprtrso, Milk, Chocolate',
-//         },
-//         portionList: [
-//           { name: '1', cost: '1800' },
-//         ],
-//       },
-//       // Конец напитка 2
-//     ],
-//   },
-//   // Конец категории "Напитки"
-
-//   // Начало категории "Алкогольные напитки"
-//   {
-//     category: {
-//       ru: 'алкогольные напитки',
-//       tr: 'alkollü içecekler',
-//       en: 'alcoholic drinks',
-//     },
-//     dishes: [
-//       // Начало алкогольного напитка 1
-//       {
-//         img: '',
-//         name: {
-//           ru: 'Carlsberg 33 cl',
-//           tr: 'Carlsberg 33 cl',
-//           en: 'Carlsberg 33 cl',
-//         },
-//         dtrcription: {
-//           ru: '',
-//           tr: '',
-//           en: '',
-//         },
-//         portionList: [
-//           { name: '33ml', cost: '1200' },
-//         ],
-//       },
-//       // Конец алкогольного напитка 1
-//       // Начало алкогольного напитка 2
-//       {
-//         img: '',
-//         name: {
-//           ru: 'Tuborg Unfiltered 50 cl',
-//           tr: 'Tuborg Unfiltered 50 cl',
-//           en: 'Tuborg Unfiltered 50 cl',
-//         },
-//         dtrcription: {
-//           ru: '',
-//           tr: '',
-//           en: '',
-//         },
-//         portionList: [
-//           { name: '50ml', cost: '1600' },
-//         ],
-//       },
-//       // Конец алкогольного напитка 2
-//     ],
-//   },
-//   // Конец категории "Алкогольные напитки"
-// ];
 
 // Функция для обновления img поля
 function updateDishesWithImage() {
