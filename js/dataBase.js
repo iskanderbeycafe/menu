@@ -2,6 +2,206 @@ const dishesList = [
   // Начало категории "Основные блюда"
   {
     category: {
+      ru: 'Шашлык / Кебаб',
+      tr: 'Kebablar',
+      en: 'Kebabs',
+    },
+    dishes: [
+      {
+        "img": "",
+        "name": {
+          "ru": "Смешанное гриль мясо",
+          "tr": "Karışık Izgara",
+          "en": "Mixed Grilled Meat"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "1100" },
+          { "name": "2", "cost": "2200" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Бараньи отбивные",
+          "tr": "Kuzu Pirzola",
+          "en": "Lamb Chops"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "480" },
+          { "name": "1.5", "cost": "720" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Шашлык из баранины",
+          "tr": "Kuzu Şiş",
+          "en": "Lamb Shish"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "370" },
+          { "name": "1.5", "cost": "555" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Кебаб Адана или Урфа",
+          "tr": "Adana veya Urfa Kebap",
+          "en": "Adana or Urfa Kebab"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "260" },
+          { "name": "1.5", "cost": "390" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Бейти в лаваше",
+          "tr": "Beyti Sarma",
+          "en": "Beyti Wrap"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "300" },
+          { "name": "1.5", "cost": "450" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Кюфта на гриле",
+          "tr": "Izgara Köfte",
+          "en": "Grilled Meatball"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "260" },
+          { "name": "1.5", "cost": "390" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Печень",
+          "tr": "Ciğer",
+          "en": "Liver"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "300" },
+          { "name": "1.5", "cost": "450" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Кебаб с помидорами",
+          "tr": "Domatesli Kebap",
+          "en": "Kebab with Tomato"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "320" },
+          { "name": "1.5", "cost": "480" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Кебаб с баклажаном",
+          "tr": "Patlıcanlı Kebap",
+          "en": "Kebab with Eggplant"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "320" },
+          { "name": "1.5", "cost": "480" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный шашлык",
+          "tr": "Tavuk Şiş",
+          "en": "Chicken Shish"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "250" },
+          { "name": "1.5", "cost": "375" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриные крылышки",
+          "tr": "Tavuk Kanat",
+          "en": "Chicken Wings"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "260" },
+          { "name": "1.5", "cost": "390" }
+        ]
+      }
+
+    ],
+  },
+  // Конец категории "Основные блюда"
+
+  // Начало категории "Основные блюда"
+  {
+    category: {
       ru: 'Дёнеры с мясом и курицей',
       tr: 'Et ve Tavuk Dönerler',
       en: 'Meat and Chicken Doners',
@@ -266,7 +466,7 @@ const dishesList = [
           { "name": "1", "cost": "240" },
           { "name": "1.5", "cost": "360" }
         ]
-      }, 
+      },
       {
         "img": "",
         "name": {
@@ -316,7 +516,7 @@ const dishesList = [
         "portionList": [
           { "name": "2", "cost": "190" }
         ]
-      },                                            
+      },
     ],
   },
   // Конец категории "Пиде"
@@ -396,7 +596,7 @@ const dishesList = [
           { "name": "1", "cost": "210" },
           { "name": "1.5", "cost": "305" }
         ]
-      },                        
+      },
     ],
   },
   // Конец категории "тушеное мясо"
@@ -472,12 +672,12 @@ const dishesList = [
         "portionList": [
           { "name": "1", "cost": "240" }
         ]
-      }     
+      }
     ],
   },
   // Конец категории "бургеры"
-   // Начало категории "пиццы"
-   {
+  // Начало категории "пиццы"
+  {
     category: {
       ru: 'пиццы',
       tr: 'pizzalar',
@@ -531,70 +731,474 @@ const dishesList = [
         "portionList": [
           { "name": "1", "cost": "190" }
         ]
-      }   
+      }
     ],
   },
   // Конец категории "пиццы"
-     // Начало категории "пиццы"
-     {
-      category: {
-        ru: 'салаты',
-        tr: 'salatalar',
-        en: 'salad',
-      },
-      dishes: [
-        {
-          "img": "",
-          "name": {
-            "ru": "Салат пастуха",
-            "tr": "Çoban Salata",
-            "en": "Shepherd Salad"
-          },
-          "description": {
-            "ru": "",
-            "tr": "",
-            "en": ""
-          },
-          "portionList": [
-            { "name": "1", "cost": "95" }
-          ]
-        },
-        {
-          "img": "",
-          "name": {
-            "ru": "Сезонный салат",
-            "tr": "Mevsim Salata",
-            "en": "Salad with Season's Vegetables"
-          },
-          "description": {
-            "ru": "",
-            "tr": "",
-            "en": ""
-          },
-          "portionList": [
-            { "name": "1", "cost": "95" }
-          ]
-        },
-        {
-          "img": "",
-          "name": {
-            "ru": "Салат из баклажанов",
-            "tr": "Patlıcan Salatası",
-            "en": "Eggplant Salad"
-          },
-          "description": {
-            "ru": "",
-            "tr": "",
-            "en": ""
-          },
-          "portionList": [
-            { "name": "1", "cost": "95" }
-          ]
-        },        
-      ],
+  // Начало категории "салаты"
+  {
+    category: {
+      ru: 'салаты',
+      tr: 'salatalar',
+      en: 'salad',
     },
-    // Конец категории "пиццы"
-  
+    dishes: [
+      {
+        "img": "",
+        "name": {
+          "ru": "Салат пастуха",
+          "tr": "Çoban Salata",
+          "en": "Shepherd Salad"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "95" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Сезонный салат",
+          "tr": "Mevsim Salata",
+          "en": "Salad with Season's Vegetables"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "95" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Салат из баклажанов",
+          "tr": "Patlıcan Salatası",
+          "en": "Eggplant Salad"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "95" }
+        ]
+      },
+    ],
+  },
+  // Конец категории "салаты"
+  // Начало категории "донеры"
+  {
+    category: {
+      ru: 'дёнеры',
+      tr: 'dürümler ve gobitler',
+      en: 'wraps and gobits',
+    },
+    dishes: [
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный Дюрюм",
+          "tr": "Tavuk Dürüm",
+          "en": "Chicken Wrap"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100gr", "cost": "110" },
+          { "name": "150gr", "cost": "165" },
+          { "name": "200gr", "cost": "220" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Мясной Дюрюм",
+          "tr": "Et Dürüm",
+          "en": "Meat Wrap"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100gr", "cost": "220" },
+          { "name": "150gr", "cost": "330" },
+          { "name": "200gr", "cost": "440" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный Гобит",
+          "tr": "Tavuk Gobit",
+          "en": "Chicken Gobit"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100gr", "cost": "110" },
+          { "name": "150gr", "cost": "165" },
+          { "name": "200gr", "cost": "220" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Мясной Гобит",
+          "tr": "Et Gobit",
+          "en": "Meat Gobit"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100gr", "cost": "220" },
+          { "name": "150gr", "cost": "330" },
+          { "name": "200gr", "cost": "440" }
+        ]
+      },                        
+    ],
+  },
+  // Конец категории "донеры"
+  // Начало категории "прохлодительные напитки"
+  {
+    category: {
+      ru: 'прохладительные напитки',
+      tr: 'soğuk içecekler',
+      en: 'cold drinks',
+    },
+    dishes: [
+      {
+        "img": "",
+        "name": {
+          "ru": "Бутылка Кока-Кола Зеро",
+          "tr": "Şişe Coca-Cola-Zero",
+          "en": "Bottle Coca-Cola Zero"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "45" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Фанта-Спрайт",
+          "tr": "Fanta-Sprite",
+          "en": "Fanta-Sprite"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "45" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Фруктовый Сок",
+          "tr": "Meyve Suları",
+          "en": "Fruit Juice"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "45" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Фьюз Ти",
+          "tr": "Fuse Tea",
+          "en": "Fuse Tea"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "45" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Айран",
+          "tr": "Ayran",
+          "en": "Ayran"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "25" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Сливочный Напиток",
+          "tr": "Yayık Ayran",
+          "en": "Buttermilk Drink"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "40" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Фруктовая Газированная Вода",
+          "tr": "Meyveli Soda",
+          "en": "Fruit Sparkling Water"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "25" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Газированная Вода",
+          "tr": "Soda",
+          "en": "Sparkling Water"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "25" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Свежевыжатый Апельсиновый Сок",
+          "tr": "Taze Sıkılmış Portakal Suyu",
+          "en": "Fresh Orange Juice"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "45" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Лимонад",
+          "tr": "Limonata",
+          "en": "Lemonade"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "45" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Свекольный Напиток",
+          "tr": "Şalgam",
+          "en": "Beet"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "30" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Вода",
+          "tr": "Su",
+          "en": "Water"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "10" }
+        ]
+      },                                                                                               
+    ],
+  },
+  // Конец категории "прохлодительные напитки"
+  // Начало категории "горячие напитки"
+  {
+    category: {
+      ru: 'горячие напитки',
+      tr: 'sıcak içecekler',
+      en: 'hot drinks',
+    },
+    dishes: [
+      {
+        "img": "",
+        "name": {
+          "ru": "Традиционный Турецкий Кофе",
+          "tr": "Geleneksel Türk Kahvesi",
+          "en": "Traditional Turkish Coffee"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "50" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Капучино",
+          "tr": "Cappuccino",
+          "en": "Cappuccino"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "50" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Нескафе",
+          "tr": "Nescafe",
+          "en": "Nescafe"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "50" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Чай",
+          "tr": "Çay",
+          "en": "Tea"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "15" }
+        ]
+      },                                               
+    ],
+  },
+  // Конец категории "горячие напитки"
+  // Начало категории "дополнительное"
+  {
+    category: {
+      ru: 'дополнительное',
+      tr: 'ek olarak',
+      en: 'additional',
+    },
+    dishes: [
+      {
+        "img": "",
+        "name": {
+          "ru": "кенюфе",
+          "tr": "kunefe",
+          "en": "kunefe"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "100" },
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "суп черба",
+          "tr": "gunun cerbasi",
+          "en": "soup of the day"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "100" },
+        ]
+      },                         
+    ],
+  },
+  // Конец категории "дополнительное"
+
 ];
 
 
