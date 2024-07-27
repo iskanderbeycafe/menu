@@ -225,7 +225,7 @@ function updateBasket() {
           <img src="./img/categories/${dishObj.img}.jpg" alt="">
           <div class="dishes-card__description">
             <h2>${item.name}</h2>
-            <h2><i>'${dishObj.name.en}'</i></h2>
+            <h2><i>'${dishObj.name.tr}'</i></h2>
             <p><span>${item.portion}</span> ${words.portion[lang]} ${item.cost} ${currencySymbol}</p>  
           </div>
         </div>
