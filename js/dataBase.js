@@ -904,9 +904,25 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Фанта-Спрайт",
-          "tr": "Fanta-Sprite",
-          "en": "Fanta-Sprite"
+          "ru": "Фанта",
+          "tr": "Fanta",
+          "en": "Fanta"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "45" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Спрайт",
+          "tr": "Sprite",
+          "en": "Sprite"
         },
         "description": {
           "ru": "",
@@ -1011,22 +1027,6 @@ const dishesList = [
         },
         "portionList": [
           { "name": " ", "cost": "25" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Свежевыжатый Апельсиновый Сок",
-          "tr": "Taze Sıkılmış Portakal Suyu",
-          "en": "Fresh Orange Juice"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": " ", "cost": "45" }
         ]
       },
       {

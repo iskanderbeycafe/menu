@@ -237,6 +237,15 @@ body.menu nav .container .nav__elements .basket-clouse_active span:nth-child(2) 
   top: 9px;
   transform: rotate(-45deg);
 }
+.nav__logo{
+  width: 70px;
+  position: absolute;
+  left: calc(50% - 35px);
+  top: 10px;
+}
+.nav__logo img{
+  width: 100%;
+}
 
 body.menu h1 {
   font-size: 36px;
