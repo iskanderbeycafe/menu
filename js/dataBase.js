@@ -10,7 +10,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Смешанное гриль мясо",
+          "ru": "Мясное Ассорти",
           "tr": "Karışık Izgara",
           "en": "Mixed Grilled Meat"
         },
@@ -27,7 +27,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Бараньи отбивные",
+          "ru": "Бараньи Отбивные",
           "tr": "Kuzu Pirzola",
           "en": "Lamb Chops"
         },
@@ -44,7 +44,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Шашлык из баранины",
+          "ru": "Шашлык из Баранины",
           "tr": "Kuzu Şiş",
           "en": "Lamb Shish"
         },
@@ -78,7 +78,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Бейти в лаваше",
+          "ru": "Кебаб в Лаваше",
           "tr": "Beyti Sarma",
           "en": "Beyti Wrap"
         },
@@ -95,7 +95,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Кюфта на гриле",
+          "ru": "Котлеты на Гриле",
           "tr": "Izgara Köfte",
           "en": "Grilled Meatball"
         },
@@ -129,7 +129,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Кебаб с помидорами",
+          "ru": "Кебаб с Помидорами",
           "tr": "Domatesli Kebap",
           "en": "Kebab with Tomato"
         },
@@ -146,7 +146,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Кебаб с баклажаном",
+          "ru": "Кебаб с Баклажаном",
           "tr": "Patlıcanlı Kebap",
           "en": "Kebab with Eggplant"
         },
@@ -163,7 +163,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Куриный шашлык",
+          "ru": "Куриный Шашлык",
           "tr": "Tavuk Şiş",
           "en": "Chicken Shish"
         },
@@ -180,7 +180,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Куриные крылышки",
+          "ru": "Куриные Крылышки",
           "tr": "Tavuk Kanat",
           "en": "Chicken Wings"
         },
@@ -202,7 +202,7 @@ const dishesList = [
   // Начало категории "Основные блюда"
   {
     category: {
-      ru: 'Дёнеры с мясом и курицей',
+      ru: 'Дёнеры с мясом или курицей',
       tr: 'Et ve Tavuk Dönerler',
       en: 'Meat and Chicken Doners',
     },
@@ -211,7 +211,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Простой мясной донер",
+          "ru": "Мясной Донер",
           "tr": "Sade Et Döner",
           "en": "Plain Meat Doner"
         },
@@ -231,7 +231,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Мясной донер с рисом",
+          "ru": "Мясной Донер с Рисом",
           "tr": "Pilav Üstü Et Döner",
           "en": "Meat Doner with Rice"
         },
@@ -268,8 +268,8 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Закрытый донер с мясом",
-          "tr": "Kapalı Döner Et",
+          "ru": "Закрытый Донер с Мясом",
+          "tr": "Kapalı Et Döner",
           "en": "Closed Doner Meat"
         },
         "description": {
@@ -283,7 +283,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "", // надо удалить
         "name": {
           "ru": "Закрытый донер с курицей",
           "tr": "Kapalı Döner Tavuk",
@@ -302,7 +302,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Искендер Кефте",
+          "ru": "Искендер с Котлетами",
           "tr": "İskender Köfte",
           "en": "Iskender Meatball"
         },
@@ -319,7 +319,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Простой куриный донер",
+          "ru": "Куриный Донер",
           "tr": "Sade Tavuk Döner",
           "en": "Plain Chicken Doner"
         },
@@ -337,7 +337,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Куриный донер с рисом",
+          "ru": "Куриный Донер с Рисом",
           "tr": "Pilav Üstü Tavuk Döner",
           "en": "Chicken Doner with Rice"
         },
@@ -385,7 +385,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Пиде с мясным фаршем",
+          "ru": "Пиде с Мясным Фаршем",
           "tr": "Kıymalı Pide",
           "en": "Pita with Ground Meat"
         },
@@ -402,7 +402,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Пиде с кашаром",
+          "ru": "Пиде с Сыром",
           "tr": "Kaşarlı Pide",
           "en": "Pita with Kashar Cheese"
         },
@@ -419,7 +419,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Пиде с кусочками мяса",
+          "ru": "Пиде с Кусочками Мяса",
           "tr": "Kuşbaşılı Pide",
           "en": "Pita with Meat Cubes"
         },
@@ -436,7 +436,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Пиде с кашаром и мясным фаршем",
+          "ru": "Пиде с Мясным Фаршем и Сыром",
           "tr": "Kıymalı Kaşarlı Pide",
           "en": "Pita with Kashar Cheese and Ground Meat"
         },
@@ -453,7 +453,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Пиде с кусочками мяса и кашаром",
+          "ru": "Пиде с Кусочками Мяса и Сыром",
           "tr": "Kuşbaşılı Kaşarlı Pide",
           "en": "Pita with Meat Cubes and Kashar Cheese"
         },
@@ -470,7 +470,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Пиде с суджуком и кашаром",
+          "ru": "Пиде с Колбасой и Сыром",
           "tr": "Sucuklu Kaşarlı Pide",
           "en": "Pita with Soujouk and Kashar Cheese"
         },
@@ -487,7 +487,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Смешанная Пиде",
+          "ru": "Пиде Ассорти",
           "tr": "Karışık Pide",
           "en": "Mixed Pita"
         },
@@ -532,7 +532,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Мясное рагу",
+          "ru": "Мясное Рагу",
           "tr": "Et Güveç",
           "en": "Meat Stew"
         },
@@ -549,7 +549,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Куриное рагу",
+          "ru": "Куриное Рагу",
           "tr": "Tavuk Güveç",
           "en": "Chicken Stew"
         },
@@ -566,7 +566,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Рагу с фрикадельками",
+          "ru": "Рагу с Котлетами",
           "tr": "Köfte Güveç",
           "en": "Meatball Stew"
         },
@@ -583,7 +583,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Рагу с грибами и кашаром",
+          "ru": "Рагу с Грибами и Сыром",
           "tr": "Kaşarlı Mantar Güveç",
           "en": "Stew with Mushroom and Kashar Cheese"
         },
@@ -644,7 +644,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Бургер с куриным донером",
+          "ru": "Бургер с Куриным Донером",
           "tr": "Tavuk Döner Burger",
           "en": "Chicken Doner Burger"
         },
@@ -660,7 +660,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Бургер с мясным донером",
+          "ru": "Бургер с Мясным Донером",
           "tr": "Et Döner Burger",
           "en": "Meat Doner Burger"
         },
@@ -703,7 +703,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Смешанная пицца",
+          "ru": "Пицца Ассорти",
           "tr": "Karışık Pizza",
           "en": "Mixed Pizza"
         },
@@ -746,7 +746,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Салат пастуха",
+          "ru": "Салат Пастуха",
           "tr": "Çoban Salata",
           "en": "Shepherd Salad"
         },
@@ -762,7 +762,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Сезонный салат",
+          "ru": "Салат Сезон",
           "tr": "Mevsim Salata",
           "en": "Salad with Season's Vegetables"
         },
@@ -778,7 +778,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Салат из баклажанов",
+          "ru": "Салат из Баклажанов",
           "tr": "Patlıcan Salatası",
           "en": "Eggplant Salad"
         },
@@ -805,7 +805,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Куриный Дюрюм",
+          "ru": "Куриная Шаурма",
           "tr": "Tavuk Dürüm",
           "en": "Chicken Wrap"
         },
@@ -823,7 +823,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Мясной Дюрюм",
+          "ru": "Мясная Шаурма",
           "tr": "Et Dürüm",
           "en": "Meat Wrap"
         },
@@ -984,7 +984,7 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "Сливочный Напиток",
+          "ru": "Домашний Айран",
           "tr": "Yayık Ayran",
           "en": "Buttermilk Drink"
         },
@@ -1166,9 +1166,9 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "кенюфе",
-          "tr": "kunefe",
-          "en": "kunefe"
+          "ru": "Кюнефе",
+          "tr": "Künefe",
+          "en": "Kunefe"
         },
         "description": {
           "ru": "",
@@ -1182,9 +1182,9 @@ const dishesList = [
       {
         "img": "",
         "name": {
-          "ru": "суп черба",
-          "tr": "gunun cerbasi",
-          "en": "soup of the day"
+          "ru": "Суп",
+          "tr": "Günün Çorbası",
+          "en": "Soup of the day"
         },
         "description": {
           "ru": "",
