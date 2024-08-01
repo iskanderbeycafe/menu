@@ -623,3 +623,12 @@ body.menu .dishes-list .change .dishes-card__info {
 .active_no {
   pointer-events: none;
 }
+.footer{
+  background-color: var(--color2);
+  padding: 20px ;
+  position: absolute;
+  bottom: 0;
+}
+.footer a{
+  color: var(--color3);
+}
