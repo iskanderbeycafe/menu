@@ -24,6 +24,7 @@ body {
   --color3: rgb(204, 121, 12);
   --color4: rgb(121, 74, 13);
   color: var(--color1);
+  position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -623,12 +624,20 @@ body.menu .dishes-list .change .dishes-card__info {
 .active_no {
   pointer-events: none;
 }
-.footer{
+footer{
   background-color: var(--color2);
-  padding: 20px ;
+  padding: 20px 0px 20px 0px;
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
-.footer a{
+footer a{
   color: var(--color3);
+  
+}
+footer p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
 }
