@@ -1,5 +1,264 @@
 const dishesList = [
-  // Начало категории "Основные блюда"
+  // Начало категории "Шаурма/Гобит"
+  {
+    category: {
+      ru: 'шаурма и гобит',
+      tr: 'dürümler ve gobitler',
+      en: 'wraps and gobits',
+    },
+    dishes: [
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриная Шаурма",
+          "tr": "Tavuk Dürüm",
+          "en": "Chicken Wrap"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100gr", "cost": "110" },
+          { "name": "150gr", "cost": "165" },
+          { "name": "200gr", "cost": "220" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Мясная Шаурма",
+          "tr": "Et Dürüm",
+          "en": "Meat Wrap"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100gr", "cost": "220" },
+          { "name": "150gr", "cost": "330" },
+          { "name": "200gr", "cost": "440" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный Гобит",
+          "tr": "Tavuk Gobit",
+          "en": "Chicken Gobit"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100gr", "cost": "110" },
+          { "name": "150gr", "cost": "165" },
+          { "name": "200gr", "cost": "220" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Мясной Гобит",
+          "tr": "Et Gobit",
+          "en": "Meat Gobit"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100gr", "cost": "220" },
+          { "name": "150gr", "cost": "330" },
+          { "name": "200gr", "cost": "440" }
+        ]
+      },                        
+    ],
+  },
+  //конец категории шаурмы и гобит
+
+  //начало категории донеры
+  {
+    category: {
+      ru: 'Дёнеры с мясом или курицей',
+      tr: 'Et ve Tavuk Dönerler',
+      en: 'Meat and Chicken Doners',
+    },
+    dishes: [
+      // Начало блюда 1
+      {
+        "img": "",
+        "name": {
+          "ru": "Мясной Донер",
+          "tr": "Sade Et Döner",
+          "en": "Plain Meat Doner"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "260" },
+          { "name": "150 gr", "cost": "390" },
+          { "name": "200 gr", "cost": "520" }
+        ]
+      },
+      // Конец блюда 1
+      // Начало блюда 2
+      {
+        "img": "",
+        "name": {
+          "ru": "Мясной Донер с Рисом",
+          "tr": "Pilav Üstü Et Döner",
+          "en": "Meat Doner with Rice"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "260" },
+          { "name": "150 gr", "cost": "390" },
+          { "name": "200 gr", "cost": "520" }
+        ]
+      },
+      // Конец блюда 2
+      {
+        "img": "",
+        "name": {
+          "ru": "Мясной Искендер",
+          "tr": "Et İskender",
+          "en": "Meat Iskender"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "260" },
+          { "name": "150 gr", "cost": "390" },
+          { "name": "200 gr", "cost": "520" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Закрытый Донер с Мясом",
+          "tr": "Kapalı Et Döner",
+          "en": "Closed Doner Meat"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "300" },
+          { "name": "1.5", "cost": "450" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Закрытый донер с курицей",
+          "tr": "Kapalı Tavuk Döner",
+          "en": "Closed Doner Chicken"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "1", "cost": "280" },
+          { "name": "1.5", "cost": "420" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Искендер с Котлетами",
+          "tr": "İskender Köfte",
+          "en": "Iskender Meatball"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "150 gr", "cost": "260" },
+          { "name": "200 gr", "cost": "390" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный Донер",
+          "tr": "Sade Tavuk Döner",
+          "en": "Plain Chicken Doner"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "200" },
+          { "name": "150 gr", "cost": "300" },
+          { "name": "200 gr", "cost": "400" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный Донер с Рисом",
+          "tr": "Pilav Üstü Tavuk Döner",
+          "en": "Chicken Doner with Rice"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "200" },
+          { "name": "150 gr", "cost": "300" },
+          { "name": "200 gr", "cost": "400" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Куриный Искендер",
+          "tr": "Tavuk İskender",
+          "en": "Chicken Iskender"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": "100 gr", "cost": "220" },
+          { "name": "150 gr", "cost": "330" },
+          { "name": "200 gr", "cost": "440" }
+        ]
+      },
+    ],
+  },
+  // Конец категории Донеры
+
+  // Начало категории Основные Блюда
   {
     category: {
       ru: 'Шашлык / Кебаб',
@@ -195,181 +454,6 @@ const dishesList = [
         ]
       }
 
-    ],
-  },
-  // Конец категории "Основные блюда"
-
-  // Начало категории "Основные блюда"
-  {
-    category: {
-      ru: 'Дёнеры с мясом или курицей',
-      tr: 'Et ve Tavuk Dönerler',
-      en: 'Meat and Chicken Doners',
-    },
-    dishes: [
-      // Начало блюда 1
-      {
-        "img": "",
-        "name": {
-          "ru": "Мясной Донер",
-          "tr": "Sade Et Döner",
-          "en": "Plain Meat Doner"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100 gr", "cost": "260" },
-          { "name": "150 gr", "cost": "390" },
-          { "name": "200 gr", "cost": "520" }
-        ]
-      },
-      // Конец блюда 1
-      // Начало блюда 2
-      {
-        "img": "",
-        "name": {
-          "ru": "Мясной Донер с Рисом",
-          "tr": "Pilav Üstü Et Döner",
-          "en": "Meat Doner with Rice"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100 gr", "cost": "260" },
-          { "name": "150 gr", "cost": "390" },
-          { "name": "200 gr", "cost": "520" }
-        ]
-      },
-      // Конец блюда 2
-      {
-        "img": "",
-        "name": {
-          "ru": "Мясной Искендер",
-          "tr": "Et İskender",
-          "en": "Meat Iskender"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100 gr", "cost": "260" },
-          { "name": "150 gr", "cost": "390" },
-          { "name": "200 gr", "cost": "520" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Закрытый Донер с Мясом",
-          "tr": "Kapalı Et Döner",
-          "en": "Closed Doner Meat"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "1", "cost": "300" },
-          { "name": "1.5", "cost": "450" }
-        ]
-      },
-      {
-        "img": "", // надо удалить
-        "name": {
-          "ru": "Закрытый донер с курицей",
-          "tr": "Kapalı Döner Tavuk",
-          "en": "Closed Doner Chicken"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "1", "cost": "280" },
-          { "name": "1.5", "cost": "420" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Искендер с Котлетами",
-          "tr": "İskender Köfte",
-          "en": "Iskender Meatball"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "150 gr", "cost": "260" },
-          { "name": "200 gr", "cost": "390" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Куриный Донер",
-          "tr": "Sade Tavuk Döner",
-          "en": "Plain Chicken Doner"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100 gr", "cost": "200" },
-          { "name": "150 gr", "cost": "300" },
-          { "name": "200 gr", "cost": "400" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Куриный Донер с Рисом",
-          "tr": "Pilav Üstü Tavuk Döner",
-          "en": "Chicken Doner with Rice"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100 gr", "cost": "200" },
-          { "name": "150 gr", "cost": "300" },
-          { "name": "200 gr", "cost": "400" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Куриный Искендер",
-          "tr": "Tavuk İskender",
-          "en": "Chicken Iskender"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100 gr", "cost": "220" },
-          { "name": "150 gr", "cost": "330" },
-          { "name": "200 gr", "cost": "440" }
-        ]
-      },
     ],
   },
   // Конец категории "Основные блюда"
@@ -794,87 +878,7 @@ const dishesList = [
   },
   // Конец категории "салаты"
   // Начало категории "донеры"
-  {
-    category: {
-      ru: 'шаурма и гобит',
-      tr: 'dürümler ve gobitler',
-      en: 'wraps and gobits',
-    },
-    dishes: [
-      {
-        "img": "",
-        "name": {
-          "ru": "Куриная Шаурма",
-          "tr": "Tavuk Dürüm",
-          "en": "Chicken Wrap"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100gr", "cost": "110" },
-          { "name": "150gr", "cost": "165" },
-          { "name": "200gr", "cost": "220" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Мясная Шаурма",
-          "tr": "Et Dürüm",
-          "en": "Meat Wrap"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100gr", "cost": "220" },
-          { "name": "150gr", "cost": "330" },
-          { "name": "200gr", "cost": "440" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Куриный Гобит",
-          "tr": "Tavuk Gobit",
-          "en": "Chicken Gobit"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100gr", "cost": "110" },
-          { "name": "150gr", "cost": "165" },
-          { "name": "200gr", "cost": "220" }
-        ]
-      },
-      {
-        "img": "",
-        "name": {
-          "ru": "Мясной Гобит",
-          "tr": "Et Gobit",
-          "en": "Meat Gobit"
-        },
-        "description": {
-          "ru": "",
-          "tr": "",
-          "en": ""
-        },
-        "portionList": [
-          { "name": "100gr", "cost": "220" },
-          { "name": "150gr", "cost": "330" },
-          { "name": "200gr", "cost": "440" }
-        ]
-      },                        
-    ],
-  },
+  
   // Конец категории "донеры"
   // Начало категории "прохлодительные напитки"
   {
