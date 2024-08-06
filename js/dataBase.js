@@ -874,6 +874,38 @@ const dishesList = [
           { "name": "1", "cost": "100" }
         ]
       },
+      {
+        "img": "",
+        "name": {
+          "ru": "Картофель Ломтиками",
+          "tr": "Elma Dilim Patates Cips",
+          "en": "Apple Slice Potato"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "100" }
+        ]
+      },
+      {
+        "img": "",
+        "name": {
+          "ru": "Картофель Фри",
+          "tr": "Patates Cips",
+          "en": "Potato Chips"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "100" }
+        ]
+      },           
     ],
   },
   // Конец категории "салаты"
