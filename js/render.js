@@ -352,5 +352,3 @@ document.querySelector('#annonce-block-clouse').onclick = function(){
   document.querySelector('.annonce-block').classList.add('displayNone');
   document.querySelector('body').classList.remove('active_no');
 }
-
-
