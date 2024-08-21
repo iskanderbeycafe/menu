@@ -12,9 +12,53 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/0dfb09cd7e.js" crossorigin="anonymous" defer></script>
   <script type="module" src="./js/render.js" defer></script>
+  <script src="./js/form.js" defer></script>
 </head>
 
 <body class="menu active_no">
+  <button class="feedBack-button"><i class="fa-solid fa-comment-dots"></i></button>
+  <div class="feedBack-bloсk">
+    <h3>Оставить отзыв</h3>
+    <form
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJ0iAudp2-h5IRq5DodCQZAXt9hJTNSZgZnda8s8t_1xX-pQ/formResponse"
+      target="form-set" method="post">
+      <div class="form-wrapper">
+        Спасибо! Ваш отзыв отправлен!
+      </div>
+      <iframe name="form-set"></iframe>
+      <div class="Rating">
+        <div class="reviews-itom">
+          <p>Еда:</p>
+          <div id="footStars" class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="reviews-itom">
+          <p>Обслуживание:</p>
+          <div id="serviceStars" class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+      </div>
+      <input id="serviceRating" type="text" name="entry.1629191978">
+      <input id="footRating" type="text" name="entry.1273514537">
+      <textarea name="entry.358016200" id="" placeholder="Ваш комментарий" required></textarea>
+      <button type="submit" class="feedBack-bloсk__button">
+        Отправить
+      </button>
+    </form>
+
+
+  </div>
   <nav>
     <div class="container">
       <div class="nav__elements">
@@ -45,7 +89,7 @@
         Пусто
       </div>
       <div class="basket-box__total-price">
-        Итого: &nbsp<span id="total-price"></span>₺
+        Итого: <span id="total-price"></span>₺
       </div>
     </div>
 
@@ -58,10 +102,10 @@
     </div>
   </main>
   <footer>
-    <a  href="https://maps.app.goo.gl/wwp8UvQyTYECLtF17" target="_blank">Tahilpazari Mh. 463 Sok. N: 1/1 M. Paşa 07040 ANTALYA</a>
-    <a href="tel:9024224440000">+90 (242) 244 40 00</a>
-    <a href="https://www.tripadvisor.ru/Restaurant_Review-g297962-d15010355-Reviews-Iskenderbey_i-Antalya_Turkish_Mediterranean_Coast.html"
-    target="_blank" rel="noopener noreferrer">Оставьте отзыв</a>
+    <p>
+      Разработчик сайта - &nbsp<a href="https://nikitakadilnikov.github.io/portfolio/" target="_blank">Никита
+        Kадильников</a>
+    </p>
   </footer>
 </body>
 
