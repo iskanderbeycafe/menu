@@ -1212,7 +1212,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "110" },
+          { "name": "1", "cost": "120" },
         ]
       },                         
     ],
