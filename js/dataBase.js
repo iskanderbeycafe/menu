@@ -887,7 +887,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": " ", "cost": "110" }
+          { "name": " ", "cost": "120" }
         ]
       },
       {
@@ -903,7 +903,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": " ", "cost": "110" }
+          { "name": " ", "cost": "120" }
         ]
       },           
     ],
