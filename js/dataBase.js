@@ -1016,7 +1016,22 @@ const dishesList = [
           { "name": " ", "cost": "35" }
         ]
       },
-   
+   {
+        "img": "",
+        "name": {
+          "ru": "Домашний Айран",
+          "tr": "Yayık Ayran",
+          "en": "Buttermilk Drink"
+        },
+        "description": {
+          "ru": "",
+          "tr": "",
+          "en": ""
+        },
+        "portionList": [
+          { "name": " ", "cost": "50" }
+        ]
+      },
      {
         "img": "",
         "name": {
