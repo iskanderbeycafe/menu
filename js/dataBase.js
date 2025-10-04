@@ -20,9 +20,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100gr", "cost": "150" },
-          { "name": "150gr", "cost": "225" },
-          { "name": "200gr", "cost": "300" }
+          { "name": "100gr", "cost": "160" },
+          { "name": "150gr", "cost": "240" },
+          { "name": "200gr", "cost": "320" }
         ]
       },
       {
@@ -38,9 +38,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100gr", "cost": "280" },
-          { "name": "150gr", "cost": "420" },
-          { "name": "200gr", "cost": "560" }
+          { "name": "100gr", "cost": "290" },
+          { "name": "150gr", "cost": "435" },
+          { "name": "200gr", "cost": "580" }
         ]
       },
       {
@@ -56,9 +56,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100gr", "cost": "150" },
-          { "name": "150gr", "cost": "225" },
-          { "name": "200gr", "cost": "300" }
+          { "name": "100gr", "cost": "160" },
+          { "name": "150gr", "cost": "240" },
+          { "name": "200gr", "cost": "320" }
         ]
       },
       {
@@ -74,9 +74,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100gr", "cost": "280" },
-          { "name": "150gr", "cost": "420" },
-          { "name": "200gr", "cost": "560" }
+          { "name": "100gr", "cost": "290" },
+          { "name": "150gr", "cost": "435" },
+          { "name": "200gr", "cost": "580" }
         ]
       },                        
     ],
@@ -105,9 +105,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100 gr", "cost": "360" },
-          { "name": "150 gr", "cost": "540" },
-          { "name": "200 gr", "cost": "720" }
+          { "name": "100 gr", "cost": "380" },
+          { "name": "150 gr", "cost": "570" },
+          { "name": "200 gr", "cost": "760" }
         ]
       },
       // Конец блюда 1
@@ -125,9 +125,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100 gr", "cost": "360" },
-          { "name": "150 gr", "cost": "540" },
-          { "name": "200 gr", "cost": "720" }
+          { "name": "100 gr", "cost": "380" },
+          { "name": "150 gr", "cost": "570" },
+          { "name": "200 gr", "cost": "760" }
         ]
       },
       // Конец блюда 2
@@ -144,9 +144,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100 gr", "cost": "360" },
-          { "name": "150 gr", "cost": "540" },
-          { "name": "200 gr", "cost": "720" }
+          { "name": "100 gr", "cost": "380" },
+          { "name": "150 gr", "cost": "570" },
+          { "name": "200 gr", "cost": "760" }
         ]
       },
       {
@@ -162,8 +162,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "420" },
-          { "name": "1.5", "cost": "630" }
+          { "name": "1", "cost": "440" },
+          { "name": "1.5", "cost": "660" }
         ]
       },
       {
@@ -179,8 +179,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "360" },
-          { "name": "1.5", "cost": "540" }
+          { "name": "1", "cost": "380" },
+          { "name": "1.5", "cost": "570" }
         ]
       },
       {
@@ -196,8 +196,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "150 gr", "cost": "360" },
-          { "name": "200 gr", "cost": "540" }
+          { "name": "150 gr", "cost": "380" },
+          { "name": "200 gr", "cost": "570" }
         ]
       },
       {
@@ -213,9 +213,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100 gr", "cost": "270" },
-          { "name": "150 gr", "cost": "405" },
-          { "name": "200 gr", "cost": "540" }
+          { "name": "100 gr", "cost": "290" },
+          { "name": "150 gr", "cost": "435" },
+          { "name": "200 gr", "cost": "580" }
         ]
       },
       {
@@ -231,9 +231,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100 gr", "cost": "270" },
-          { "name": "150 gr", "cost": "405" },
-          { "name": "200 gr", "cost": "540" }
+          { "name": "100 gr", "cost": "290" },
+          { "name": "150 gr", "cost": "435" },
+          { "name": "200 gr", "cost": "580" }
         ]
       },
       {
@@ -249,9 +249,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100 gr", "cost": "300" },
-          { "name": "150 gr", "cost": "450" },
-          { "name": "200 gr", "cost": "600" }
+          { "name": "100 gr", "cost": "320" },
+          { "name": "150 gr", "cost": "480" },
+          { "name": "200 gr", "cost": "640" }
         ]
       },
     ],
@@ -279,8 +279,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "1600" },
-          { "name": "2", "cost": "3200" }
+          { "name": "1", "cost": "1700" },
+          { "name": "2", "cost": "3400" }
         ]
       },
       {
@@ -296,8 +296,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "750" },
-          { "name": "1.5", "cost": "1150" }
+          { "name": "1", "cost": "770" },
+          { "name": "1.5", "cost": "1155" }
         ]
       },
       {
@@ -313,8 +313,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "550" },
-          { "name": "1.5", "cost": "825" }
+          { "name": "1", "cost": "570" },
+          { "name": "1.5", "cost": "855" }
         ]
       },
       {
@@ -330,8 +330,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "360" },
-          { "name": "1.5", "cost": "540" }
+          { "name": "1", "cost": "380" },
+          { "name": "1.5", "cost": "570" }
         ]
       },
       {
@@ -347,8 +347,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "400" },
-          { "name": "1.5", "cost": "600" }
+          { "name": "1", "cost": "420" },
+          { "name": "1.5", "cost": "630" }
         ]
       },
       {
@@ -364,8 +364,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "360" },
-          { "name": "1.5", "cost": "540" }
+          { "name": "1", "cost": "380" },
+          { "name": "1.5", "cost": "570" }
         ]
       },
       {
@@ -381,8 +381,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "420" },
-          { "name": "1.5", "cost": "630" }
+          { "name": "1", "cost": "440" },
+          { "name": "1.5", "cost": "660" }
         ]
       },
       {
@@ -398,8 +398,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "420" },
-          { "name": "1.5", "cost": "630" }
+          { "name": "1", "cost": "440" },
+          { "name": "1.5", "cost": "660" }
         ]
       },
       {
@@ -415,8 +415,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "420" },
-          { "name": "1.5", "cost": "630" }
+          { "name": "1", "cost": "440" },
+          { "name": "1.5", "cost": "660" }
         ]
       },
       {
@@ -432,8 +432,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "330" },
-          { "name": "1.5", "cost": "495" }
+          { "name": "1", "cost": "350" },
+          { "name": "1.5", "cost": "525" }
         ]
       },
       {
@@ -449,8 +449,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "340" },
-          { "name": "1.5", "cost": "510" }
+          { "name": "1", "cost": "360" },
+          { "name": "1.5", "cost": "540" }
         ]
       }
 
@@ -479,8 +479,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "240" },
-          { "name": "1.5", "cost": "360" }
+          { "name": "1", "cost": "260" },
+          { "name": "1.5", "cost": "390" }
         ]
       },
       {
@@ -496,8 +496,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "240" },
-          { "name": "1.5", "cost": "360" }
+          { "name": "1", "cost": "260" },
+          { "name": "1.5", "cost": "390" }
         ]
       },
       {
@@ -513,8 +513,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "280" },
-          { "name": "1.5", "cost": "420" }
+          { "name": "1", "cost": "300" },
+          { "name": "1.5", "cost": "450" }
         ]
       },
       {
@@ -530,8 +530,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "280" },
-          { "name": "1.5", "cost": "420" }
+          { "name": "1", "cost": "300" },
+          { "name": "1.5", "cost": "450" }
         ]
       },
       {
@@ -547,8 +547,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "310" },
-          { "name": "1.5", "cost": "465" }
+          { "name": "1", "cost": "330" },
+          { "name": "1.5", "cost": "495" }
         ]
       },
       {
@@ -564,8 +564,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "280" },
-          { "name": "1.5", "cost": "420" }
+          { "name": "1", "cost": "300" },
+          { "name": "1.5", "cost": "450" }
         ]
       },
       {
@@ -581,8 +581,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "310" },
-          { "name": "1.5", "cost": "465" }
+          { "name": "1", "cost": "330" },
+          { "name": "1.5", "cost": "495" }
         ]
       },
       {
@@ -598,7 +598,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "2", "cost": "260" }
+          { "name": "2", "cost": "280" }
         ]
       },
     ],
@@ -626,8 +626,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "560" },
-          { "name": "1.5", "cost": "840" }
+          { "name": "1", "cost": "580" },
+          { "name": "1.5", "cost": "870" }
         ]
       },
       {
@@ -643,8 +643,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "360" },
-          { "name": "1.5", "cost": "540" }
+          { "name": "1", "cost": "380" },
+          { "name": "1.5", "cost": "570" }
         ]
       },
       {
@@ -660,8 +660,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "380" },
-          { "name": "1.5", "cost": "570" }
+          { "name": "1", "cost": "400" },
+          { "name": "1.5", "cost": "600" }
         ]
       },
       {
@@ -677,7 +677,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "290" },
+          { "name": "1", "cost": "310" },
         ]
       },
     ],
@@ -705,7 +705,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "260" }
+          { "name": "1", "cost": "280" }
         ]
       },
       {
@@ -721,7 +721,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "310" }
+          { "name": "1", "cost": "330" }
         ]
       },
       {
@@ -737,7 +737,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "260" }
+          { "name": "1", "cost": "280" }
         ]
       },
       {
@@ -753,7 +753,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "360" }
+          { "name": "1", "cost": "380" }
         ]
       }
     ],
@@ -780,7 +780,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "260" }
+          { "name": "1", "cost": "270" }
         ]
       },
       {
@@ -796,7 +796,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "280" }
+          { "name": "1", "cost": "290" }
         ]
       },
       {
@@ -812,7 +812,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "280" }
+          { "name": "1", "cost": "290" }
         ]
       }
     ],
@@ -839,7 +839,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "130" }
+          { "name": "1", "cost": "140" }
         ]
       },
       {
@@ -855,7 +855,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "130" }
+          { "name": "1", "cost": "140" }
         ]
       },
       {
@@ -871,7 +871,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "130" }
+          { "name": "1", "cost": "140" }
         ]
       },
       {
@@ -1195,7 +1195,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "160" },
+          { "name": "1", "cost": "180" },
         ]
       },
       {
@@ -1238,4 +1238,5 @@ function updateDishesWithImage() {
 updateDishesWithImage();
 
 export default dishesList;
+
 
