@@ -249,9 +249,9 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "100 gr", "cost": "300" },
-          { "name": "150 gr", "cost": "450" },
-          { "name": "200 gr", "cost": "600" }
+          { "name": "100 gr", "cost": "330" },
+          { "name": "150 gr", "cost": "495" },
+          { "name": "200 gr", "cost": "660" }
         ]
       },
     ],
@@ -1238,6 +1238,7 @@ function updateDishesWithImage() {
 updateDishesWithImage();
 
 export default dishesList;
+
 
 
 
