@@ -190,7 +190,7 @@ const dishesList = [
         },
         "portionList": [
           { "name": "100 gr", "cost": "490" },
-          { "name": "150 gr", "cost": "730" },
+          { "name": "150 gr", "cost": "735" },
           { "name": "200 gr", "cost": "980" }
         ]
       },
