@@ -226,8 +226,8 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": "1", "cost": "590" },
-          { "name": "1.5", "cost": "885" }
+          { "name": "1", "cost": "550" },
+          { "name": "1.5", "cost": "825" }
         ]
       },
       {
