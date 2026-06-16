@@ -789,7 +789,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "burgers/hamburger",
         "name": {
           "ru": "Суджук Бургер",
           "tr": "Sucuk Burger",
