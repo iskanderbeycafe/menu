@@ -80,7 +80,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "wraps-and-gobits/meat-gobit",
         "name": {
           "ru": "Суджук в хлебе (Гобит)",
           "tr": "Sucuk Ekmek (Gobit)",
@@ -96,7 +96,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/adana-or-urfa-kebab",
         "name": {
           "ru": "Адана - Урфа Шаурма",
           "tr": "Adana - Urfa Dürüm",
@@ -112,7 +112,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/chicken-shish",
         "name": {
           "ru": "Куриный Шашлык Шаурма",
           "tr": "Tavuk Şiş Dürüm",
@@ -1276,8 +1276,10 @@ function updateDishesWithImage() {
   dishesList.forEach(categoryObj => {
     const categoryNameEn = categoryObj.category.en.toLowerCase().replace(/\s+/g, '-');
     categoryObj.dishes.forEach(dish => {
-      const dishNameEn = dish.name.en.toLowerCase().replace(/\s+/g, '-');
-      dish.img = `${categoryNameEn}/${dishNameEn}`; // Заполнение поля img в формате 'category[en]/name[en]'
+      if (!dish.img) {
+        const dishNameEn = dish.name.en.toLowerCase().replace(/\s+/g, '-');
+        dish.img = `${categoryNameEn}/${dishNameEn}`; // Заполнение поля img в формате 'category[en]/name[en]'
+      }
     });
   });
 }
