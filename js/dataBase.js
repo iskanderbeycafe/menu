@@ -1173,7 +1173,7 @@ const dishesList = [
           "en": ""
         },
         "portionList": [
-          { "name": " ", "cost": "15" }
+          { "name": " ", "cost": "20" }
         ]
       },                                                                                               
     ],
