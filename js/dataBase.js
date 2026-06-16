@@ -8,7 +8,7 @@ const dishesList = [
     },
     dishes: [
       {
-        "img": "",
+        "img": "wraps-and-gobits/chicken-wrap",
         "name": {
           "ru": "Куриная Шаурма",
           "tr": "Tavuk Dürüm",
@@ -26,7 +26,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "wraps-and-gobits/meat-wrap",
         "name": {
           "ru": "Мясная Шаурма",
           "tr": "Et Dürüm",
@@ -44,7 +44,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "wraps-and-gobits/chicken-gobit",
         "name": {
           "ru": "Куриный Гобит",
           "tr": "Tavuk Gobit",
@@ -62,7 +62,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "wraps-and-gobits/meat-gobit",
         "name": {
           "ru": "Мясной Гобит",
           "tr": "Et Gobit",
@@ -128,7 +128,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/grilled-meatball",
         "name": {
           "ru": "Котлеты в Гобите",
           "tr": "Gobit Köfte",
@@ -177,7 +177,7 @@ const dishesList = [
       // Конец блюда 1
       // Начало блюда 2
       {
-        "img": "",
+        "img": "meat-and-chicken-doners/meat-doner-with-rice",
         "name": {
           "ru": "Мясной Донер с Рисом",
           "tr": "Pilav Üstü Et Döner",
@@ -196,7 +196,7 @@ const dishesList = [
       },
       // Конец блюда 2
       {
-        "img": "",
+        "img": "meat-and-chicken-doners/meat-iskender",
         "name": {
           "ru": "Мясной Искендер",
           "tr": "Et İskender",
@@ -248,7 +248,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "meat-and-chicken-doners/iskender-meatball",
         "name": {
           "ru": "Искендер с Котлетами",
           "tr": "İskender Köfte",
@@ -265,7 +265,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "meat-and-chicken-doners/plain-chicken-doner",
         "name": {
           "ru": "Куриный Донер",
           "tr": "Sade Tavuk Döner",
@@ -283,7 +283,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "meat-and-chicken-doners/chicken-doner-with-rice",
         "name": {
           "ru": "Куриный Донер с Рисом",
           "tr": "Pilav Üstü Tavuk Döner",
@@ -301,7 +301,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "meat-and-chicken-doners/chicken-iskender",
         "name": {
           "ru": "Куриный Искендер",
           "tr": "Tavuk İskender",
@@ -331,7 +331,7 @@ const dishesList = [
     },
     dishes: [
       {
-        "img": "",
+        "img": "kebabs/mixed-grilled-meat",
         "name": {
           "ru": "Мясное Ассорти",
           "tr": "Karışık Izgara",
@@ -348,7 +348,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/lamb-chops",
         "name": {
           "ru": "Бараньи Отбивные",
           "tr": "Kuzu Pirzola",
@@ -365,7 +365,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/lamb-shish",
         "name": {
           "ru": "Шашлык из Баранины",
           "tr": "Kuzu Şiş",
@@ -382,7 +382,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/adana-or-urfa-kebab",
         "name": {
           "ru": "Кебаб Адана или Урфа",
           "tr": "Adana veya Urfa Kebap",
@@ -399,7 +399,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/beyti-wrap",
         "name": {
           "ru": "Кебаб Бейти",
           "tr": "Beyti Sarma",
@@ -416,7 +416,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/grilled-meatball",
         "name": {
           "ru": "Котлеты на Гриле",
           "tr": "Izgara Köfte",
@@ -450,7 +450,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/kebab-with-tomato",
         "name": {
           "ru": "Кебаб с Помидорами",
           "tr": "Domatesli Kebap",
@@ -467,7 +467,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/kebab-with-eggplant",
         "name": {
           "ru": "Кебаб с Баклажаном",
           "tr": "Patlıcanlı Kebap",
@@ -484,7 +484,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/chicken-shish",
         "name": {
           "ru": "Куриный Шашлык",
           "tr": "Tavuk Şiş",
@@ -501,7 +501,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "kebabs/chicken-wings",
         "name": {
           "ru": "Куриные Крылышки",
           "tr": "Tavuk Kanat",
@@ -531,7 +531,7 @@ const dishesList = [
     },
     dishes: [
       {
-        "img": "",
+        "img": "pitas/pita-with-ground-meat",
         "name": {
           "ru": "Пиде с Мясным Фаршем",
           "tr": "Kıymalı Pide",
@@ -548,7 +548,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "pitas/pita-with-kashar-cheese",
         "name": {
           "ru": "Пиде с Сыром",
           "tr": "Kaşarlı Pide",
@@ -565,7 +565,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "pitas/pita-with-meat-cubes",
         "name": {
           "ru": "Пиде с Кусочками Мяса",
           "tr": "Kuşbaşılı Pide",
@@ -582,7 +582,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "pitas/pita-with-kashar-cheese-and-ground-meat",
         "name": {
           "ru": "Пиде с Мясным Фаршем и Сыром",
           "tr": "Kıymalı Kaşarlı Pide",
@@ -599,7 +599,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "pitas/pita-with-meat-cubes-and-kashar-cheese",
         "name": {
           "ru": "Пиде с Кусочками Мяса и Сыром",
           "tr": "Kuşbaşılı Kaşarlı Pide",
@@ -633,7 +633,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "pitas/mixed-pita",
         "name": {
           "ru": "Пиде Ассорти",
           "tr": "Karışık Pide",
@@ -650,7 +650,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "pitas/lahmacun",
         "name": {
           "ru": "Лахмаджун",
           "tr": "Lahmacun",
@@ -678,7 +678,7 @@ const dishesList = [
     },
     dishes: [
       {
-        "img": "",
+        "img": "stews/meat-stew",
         "name": {
           "ru": "Мясное Рагу",
           "tr": "Et Güveç",
@@ -695,7 +695,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "stews/chicken-stew",
         "name": {
           "ru": "Куриное Рагу",
           "tr": "Tavuk Güveç",
@@ -712,7 +712,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "stews/meatball-stew",
         "name": {
           "ru": "Рагу с Котлетами",
           "tr": "Köfte Güveç",
@@ -729,7 +729,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "stews/stew-with-mushroom-and-kashar-cheese",
         "name": {
           "ru": "Рагу с Грибами и Сыром",
           "tr": "Kaşarlı Mantar Güveç",
@@ -757,7 +757,7 @@ const dishesList = [
     },
     dishes: [
       {
-        "img": "",
+        "img": "burgers/hamburger",
         "name": {
           "ru": "Гамбургер",
           "tr": "Hamburger",
@@ -773,7 +773,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "burgers/cheeseburger",
         "name": {
           "ru": "Чизбургер",
           "tr": "Çizburger",
@@ -805,7 +805,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "burgers/chicken-doner-burger",
         "name": {
           "ru": "Бургер с Куриным Донером",
           "tr": "Tavuk Döner Burger",
@@ -821,7 +821,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "burgers/meat-doner-burger",
         "name": {
           "ru": "Бургер с Мясным Донером",
           "tr": "Et Döner Burger",
@@ -864,7 +864,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "pizzas/mixed-pizza",
         "name": {
           "ru": "Пицца Ассорти",
           "tr": "Karışık Pizza",
@@ -939,7 +939,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "salad/eggplant-salad",
         "name": {
           "ru": "Салат из Баклажанов",
           "tr": "Patlıcan Salatası",
@@ -955,7 +955,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "salad/potato-chips",
         "name": {
           "ru": "Картофель Фри",
           "tr": "Patates Cips",
@@ -985,7 +985,7 @@ const dishesList = [
     },
     dishes: [
       {
-        "img": "",
+        "img": "cold-drinks/bottle-coca-cola-zero",
         "name": {
           "ru": "Бутылка Кока-Кола Зеро",
           "tr": "Şişe Coca-Cola-Zero",
@@ -1001,7 +1001,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/fanta",
         "name": {
           "ru": "Фанта",
           "tr": "Fanta",
@@ -1017,7 +1017,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/sprite",
         "name": {
           "ru": "Спрайт",
           "tr": "Sprite",
@@ -1033,7 +1033,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/fruit-juice",
         "name": {
           "ru": "Фруктовый Сок",
           "tr": "Meyve Suları",
@@ -1049,7 +1049,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/fuse-tea",
         "name": {
           "ru": "Фьюз Ти",
           "tr": "Fuse Tea",
@@ -1065,7 +1065,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/ayran",
         "name": {
           "ru": "Айран",
           "tr": "Ayran",
@@ -1081,7 +1081,7 @@ const dishesList = [
         ]
       },
    {
-        "img": "",
+        "img": "cold-drinks/yayik-ayran",
         "name": {
           "ru": "Домашний Айран",
           "tr": "Yayık Ayran",
@@ -1097,7 +1097,7 @@ const dishesList = [
         ]
       },
      {
-        "img": "",
+        "img": "cold-drinks/fruit-sparkling-water",
         "name": {
           "ru": "Фруктовая Газированная Вода",
           "tr": "Meyveli Soda",
@@ -1113,7 +1113,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/sparkling-water",
         "name": {
           "ru": "Газированная Вода",
           "tr": "Soda",
@@ -1129,7 +1129,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/lemonade",
         "name": {
           "ru": "Лимонад",
           "tr": "Limonata",
@@ -1145,7 +1145,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/beet",
         "name": {
           "ru": "Свекольный Напиток",
           "tr": "Şalgam",
@@ -1161,7 +1161,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "cold-drinks/water",
         "name": {
           "ru": "Вода",
           "tr": "Su",
@@ -1188,7 +1188,7 @@ const dishesList = [
     },
     dishes: [
       {
-        "img": "",
+        "img": "hot-drinks/traditional-turkish-coffee",
         "name": {
           "ru": "Традиционный Турецкий Кофе",
           "tr": "Geleneksel Türk Kahvesi",
@@ -1204,7 +1204,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "hot-drinks/tea",
         "name": {
           "ru": "Чай",
           "tr": "Çay",
@@ -1231,7 +1231,7 @@ const dishesList = [
     },
     dishes: [
       {
-        "img": "",
+        "img": "additional/kunefe",
         "name": {
           "ru": "Кюнефе",
           "tr": "Künefe",
@@ -1247,7 +1247,7 @@ const dishesList = [
         ]
       },
       {
-        "img": "",
+        "img": "additional/soup-of-the-day",
         "name": {
           "ru": "Суп Дня",
           "tr": "Günün Çorbası",
