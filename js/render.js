@@ -1,119 +1,191 @@
 import dishesList from './dataBase.js';
 
-// Получение текущего языка страницы
 const lang = document.documentElement.lang;
 const currencySymbol = '₺';
 
 const words = {
-  portion: {
-    ru: 'порция',
-    en: 'portion',
-    tr: 'porsiyon'
+  portion: { ru: 'порция', en: 'portion', tr: 'porsiyon' },
+  cost: { ru: 'стоимость', en: 'cost', tr: 'fiyat' },
+  empty: { ru: 'Пусто', en: 'Empty', tr: 'Boş' },
+  emptyHint: {
+    ru: 'Добавьте блюда из меню',
+    en: 'Start adding dishes from the menu',
+    tr: 'Menüden yemek eklemeye başlayın'
   },
-  cost: {
-    ru: 'стоимость',
-    en: 'cost',
-    tr: 'fiyat'
-  },
+  added: { ru: 'Добавлено!', en: 'Added!', tr: 'Eklendi!' },
 }
 
-// Получение элемента, в который будут добавляться кнопки категорий
+const categoryIcons = {
+  'Wraps and Gobits':        '🥙',
+  'Meat and Chicken Doners': '🍖',
+  'Kebabs':                  '🔥',
+  'Pitas':                   '🫓',
+  'Stews':                   '🍲',
+  'Burgers':                 '🍔',
+  'Pizzas':                  '🍕',
+  'Salad':                   '🥗',
+  'Cold Drinks':             '🧃',
+  'Hot Drinks':              '☕',
+  'Additional':              '✨',
+  'Dürümler ve Gobitler':    '🥙',
+  'Et ve Tavuk Dönerler':    '🍖',
+  'Kebaplar':                '🔥',
+  'Pitalar':                 '🫓',
+  'Güveçler':                '🍲',
+  'Burgerler':               '🍔',
+  'Pizzalar':                '🍕',
+  'Salata':                  '🥗',
+  'Soğuk İçecekler':         '🧃',
+  'Sıcak İçecekler':         '☕',
+  'Ek Ürünler':              '✨',
+  'Шаурма и Гобит':          '🥙',
+  'Мясные и Куриные Донеры': '🍖',
+  'Кебабы':                  '🔥',
+  'Питы':                    '🫓',
+  'Рагу':                    '🍲',
+  'Бургеры':                 '🍔',
+  'Пиццы':                   '🍕',
+  'Салат':                   '🥗',
+  'Холодные Напитки':        '🧃',
+  'Горячие Напитки':         '☕',
+  'Дополнительно':           '✨',
+}
+
 const categoriesDiv = document.getElementById('categoriesList');
 const dishesListDiv = document.querySelector('.dishes-list');
-const basketListDiv = document.querySelector('.basket-list'); // Получение элемента для корзины
+const basketListDiv = document.querySelector('.basket-list');
 
-// Массив для хранения данных выбранных порций
 let changedCart = [];
-// Объект для хранения состояния категорий
 const categoryState = {};
 
-// Функция для создания кнопок категорий
+// ── Toast notification ─────────────────────────────────
+function showToast(message) {
+  let toast = document.getElementById('toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'toast';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = message;
+  toast.classList.remove('toast--hide');
+  toast.classList.add('toast--show');
+  clearTimeout(toast._timeout);
+  toast._timeout = setTimeout(() => {
+    toast.classList.remove('toast--show');
+    toast.classList.add('toast--hide');
+  }, 1800);
+}
+
+// ── Shimmer skeletons ──────────────────────────────────
+function showSkeletons(count = 3) {
+  dishesListDiv.innerHTML = '';
+  for (let i = 0; i < count; i++) {
+    const sk = document.createElement('div');
+    sk.classList.add('dishes-card', 'skeleton-card');
+    sk.innerHTML = `
+      <div class="skeleton-img"></div>
+      <div class="skeleton-body">
+        <div class="skeleton-line wide"></div>
+        <div class="skeleton-line medium"></div>
+        <div class="skeleton-line short"></div>
+      </div>
+    `;
+    dishesListDiv.appendChild(sk);
+  }
+}
+
+// ── Category buttons ───────────────────────────────────
 function createCategoryButtons() {
   dishesList.forEach((categoryObj, index) => {
     const button = document.createElement('button');
-    button.textContent = categoryObj.category[lang];
+    const catName = categoryObj.category[lang];
+    const catNameEn = categoryObj.category['en'];
+    const icon = categoryIcons[catName] || categoryIcons[catNameEn] || '🍽️';
+    button.innerHTML = `<span class="cat-icon">${icon}</span><span>${catName}</span>`;
 
-    // Добавление класса _active первой кнопке
     if (index === 0) {
       button.classList.add('_active');
-      renderDishes(categoryObj.dishes, categoryObj.category[lang]); // Рендерим блюда первой категории по умолчанию
+      renderDishes(categoryObj.dishes, catName);
     }
 
     button.addEventListener('click', (event) => {
-      handleCategoryButtonClick(event, categoryObj.dishes, categoryObj.category[lang]);
+      handleCategoryButtonClick(event, categoryObj.dishes, catName);
     });
 
     categoriesDiv.appendChild(button);
   });
 }
+
 let activeDishes = dishesList[0].dishes;
-let activecategoryName = 'основные блюда';
-// Функция для обработки клика по кнопке категории
+let activecategoryName = dishesList[0].category[lang];
+
 function handleCategoryButtonClick(event, dishes, categoryName) {
-  // Удаление класса _active у всех кнопок
-  document.querySelectorAll('#categoriesList button').forEach(button => {
-    button.classList.remove('_active');
-  });
-
-  // Добавление класса _active только на нажатую кнопку
+  document.querySelectorAll('#categoriesList button').forEach(btn => btn.classList.remove('_active'));
   event.currentTarget.classList.add('_active');
-
-  // Рендеринг блюд выбранной категории
+  // Auto-scroll active button into view
+  event.currentTarget.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
   activeDishes = dishes;
-  activecategoryName = categoryName
+  activecategoryName = categoryName;
   renderDishes(dishes, categoryName);
 }
 
-// Функция для рендеринга блюд
+// ── Render dishes with shimmer then cards ──────────────
 function renderDishes(dishes, categoryName) {
   dishesListDiv.classList.add('_hide');
+  showSkeletons(Math.min(dishes.length, 4));
+  dishesListDiv.classList.remove('_hide');
+
   setTimeout(() => {
-    // Очистка текущих блюд
     dishesListDiv.innerHTML = '';
 
-    dishes.forEach(dish => {
+    dishes.forEach((dish, index) => {
       const dishCard = document.createElement('div');
       dishCard.classList.add('dishes-card');
+      dishCard.style.animationDelay = `${index * 60}ms`;
 
       dishCard.innerHTML = `
-            <img src="./img/categories/${dish.img}.jpg" alt="">
-            <div class="dishes-card__info">
-              <div class="dishes-card__description">
-                <h2>${dish.name[lang]}</h2>
-                <p>${dish.description[lang]}</p>  
+        <div class="card-img-wrap">
+          <img src="./img/categories/${dish.img}.jpg" alt="${dish.name[lang]}"
+            onerror="this.parentElement.classList.add('img-error'); this.style.display='none';">
+          <div class="img-fallback"><span>${dish.name[lang]}</span></div>
+          <div class="img-gradient"></div>
+        </div>
+        <div class="dishes-card__info">
+          <div class="dishes-card__description">
+            <h2>${dish.name[lang]}</h2>
+            <p>${dish.description[lang]}</p>
+          </div>
+          <div class="dishes-card__management">
+            ${dish.portionList.map(portion => `
+              <div class="portion-name">
+                <p>
+                  <span>${words.portion[lang]} <span class="portion-name">${portion.name}</span> - </span>
+                  <span><span class="portion-cost">${portion.cost}${currencySymbol}</span></span>
+                </p>
+                <div class="counter-wrap">
+                  <button class="portion-minus"><i class="fa-solid fa-minus"></i></button>
+                  <span class="portion-number">0</span>
+                  <button class="portion-plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
               </div>
-              <div class="dishes-card__management">
-                ${dish.portionList.map(portion => `
-                  <div class="portion-name">
-                    <p><span>${words.portion[lang]} <span class="portion-name">${portion.name}</span> - </span><span> <span class="portion-cost">${portion.cost}${currencySymbol}</span></span></p>
-                    <div>
-                      <button class="portion-minus"><i class="fa-solid fa-minus"></i></button>
-                      <span class="portion-number">0</span>
-                      <button class="portion-plus"><i class="fa-solid fa-plus"></i></button>
-                    </div>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          `;
+            `).join('')}
+          </div>
+        </div>
+      `;
 
-      // Восстановление состояния порций
       if (categoryState[categoryName] && categoryState[categoryName][dish.name[lang]]) {
         const savedPortions = categoryState[categoryName][dish.name[lang]];
         dishCard.classList.add('change');
         dishCard.querySelectorAll('.portion-name').forEach(portionElement => {
-          const portionNameElement = portionElement.querySelector('.portion-name');
-          const portionNumberElement = portionElement.querySelector('.portion-number');
-          if (portionNameElement && portionNumberElement) {
-            const portionName = portionNameElement.textContent;
-            if (savedPortions[portionName]) {
-              portionNumberElement.textContent = savedPortions[portionName].quantity;
-            }
+          const portionNameEl = portionElement.querySelector('.portion-name');
+          const portionNumberEl = portionElement.querySelector('.portion-number');
+          if (portionNameEl && portionNumberEl) {
+            const pName = portionNameEl.textContent;
+            if (savedPortions[pName]) portionNumberEl.textContent = savedPortions[pName].quantity;
           }
         });
       }
 
-      // Добавляем обработчики событий на кнопки + и -
       dishCard.querySelectorAll('.portion-plus').forEach(button => {
         button.addEventListener('click', () => updatePortion(button, 'plus', dish, categoryName));
       });
@@ -125,94 +197,79 @@ function renderDishes(dishes, categoryName) {
     });
 
     dishesListDiv.scrollLeft = 0;
-    dishesListDiv.classList.remove('_hide');
-  }, 500);
+  }, 350);
 }
 
-// Функция для обновления количества порций
+// ── Update portion count ───────────────────────────────
 function updatePortion(button, action, dish, categoryName) {
   const portionElement = button.closest('.portion-name');
-  if (!portionElement) {
-    console.error("portionElement is null");
-    return;
-  }
-  const portionNameElement = portionElement.querySelector('.portion-name');
-  const portionCostElement = portionElement.querySelector('.portion-cost');
-  const portionNumberElement = portionElement.querySelector('.portion-number');
+  if (!portionElement) return;
 
-  if (portionNameElement && portionCostElement && portionNumberElement) {
-    const portionName = portionNameElement.textContent;
-    const portionCost = parseInt(portionCostElement.textContent);
-    let portionNumber = parseInt(portionNumberElement.textContent);
+  const portionNameEl = portionElement.querySelector('.portion-name');
+  const portionCostEl = portionElement.querySelector('.portion-cost');
+  const portionNumberEl = portionElement.querySelector('.portion-number');
+
+  if (portionNameEl && portionCostEl && portionNumberEl) {
+    const portionName = portionNameEl.textContent;
+    const portionCost = parseInt(portionCostEl.textContent);
+    let portionNumber = parseInt(portionNumberEl.textContent);
 
     if (action === 'plus') {
       portionNumber += 1;
+      showToast(`${words.added[lang]} ${dish.name[lang]}`);
     } else if (action === 'minus' && portionNumber > 0) {
       portionNumber -= 1;
     }
 
-    portionNumberElement.textContent = portionNumber;
+    portionNumberEl.textContent = portionNumber;
 
-    // Обновление стиля карточки и массива changedCart
     const dishCard = button.closest('.dishes-card');
     if (portionNumber > 0) {
       dishCard.classList.add('change');
-      // Обновление состояния категории
-      if (!categoryState[categoryName]) {
-        categoryState[categoryName] = {};
-      }
-      if (!categoryState[categoryName][dish.name[lang]]) {
-        categoryState[categoryName][dish.name[lang]] = {};
-      }
+      if (!categoryState[categoryName]) categoryState[categoryName] = {};
+      if (!categoryState[categoryName][dish.name[lang]]) categoryState[categoryName][dish.name[lang]] = {};
       categoryState[categoryName][dish.name[lang]][portionName] = {
-        quantity: portionNumber,
-        cost: portionCost,
-        totalCost: portionNumber * portionCost
+        quantity: portionNumber, cost: portionCost, totalCost: portionNumber * portionCost
       };
-
-      // Добавление порции в changedCart, если не добавлено
       const portionData = {
-        categoryName: categoryName,
-        name: dish.name[lang],
-        portion: portionName,
-        cost: portionCost,
-        quantity: portionNumber,
-        totalCost: portionNumber * portionCost
+        categoryName, name: dish.name[lang], portion: portionName,
+        cost: portionCost, quantity: portionNumber, totalCost: portionNumber * portionCost
       };
-      const existingPortion = changedCart.find(item => item.name === portionData.name && item.portion === portionData.portion);
-      if (existingPortion) {
-        existingPortion.quantity = portionNumber;
-        existingPortion.totalCost = portionData.totalCost;
+      const existing = changedCart.find(i => i.name === portionData.name && i.portion === portionData.portion);
+      if (existing) {
+        existing.quantity = portionNumber;
+        existing.totalCost = portionData.totalCost;
       } else {
         changedCart.push(portionData);
       }
     } else {
-      // Удаление порции из categoryState и changedCart, если количество равно 0
-      if (categoryState[categoryName] && categoryState[categoryName][dish.name[lang]]) {
+      if (categoryState[categoryName]?.[dish.name[lang]]) {
         delete categoryState[categoryName][dish.name[lang]][portionName];
         if (Object.keys(categoryState[categoryName][dish.name[lang]]).length === 0) {
           delete categoryState[categoryName][dish.name[lang]];
         }
       }
-      changedCart = changedCart.filter(item => !(item.name === dish.name[lang] && item.portion === portionName));
-      // Удаление класса 'change', если все порции равны 0
-      if (Array.from(dishCard.querySelectorAll('.portion-number')).every(element => parseInt(element.textContent) === 0)) {
+      changedCart = changedCart.filter(i => !(i.name === dish.name[lang] && i.portion === portionName));
+      if (Array.from(dishCard.querySelectorAll('.portion-number')).every(el => parseInt(el.textContent) === 0)) {
         dishCard.classList.remove('change');
       }
     }
-
-    // Обновление корзины
     updateBasket();
   }
 }
 
-
-// Функция для обновления корзины
+// ── Update basket ──────────────────────────────────────
 function updateBasket() {
   basketListDiv.innerHTML = '';
 
   if (changedCart.length === 0) {
-    basketListDiv.textContent = 'Пусто';
+    basketListDiv.innerHTML = `
+      <div class="basket-empty">
+        <i class="fa-solid fa-basket-shopping basket-empty__icon"></i>
+        <p class="basket-empty__title">${words.empty[lang]}</p>
+        <p class="basket-empty__hint">${words.emptyHint[lang]}</p>
+      </div>
+    `;
     document.querySelector('button.basket').classList.remove('basket_have');
   } else {
     document.querySelector('button.basket').classList.add('basket_have');
@@ -226,7 +283,7 @@ function updateBasket() {
           <div class="dishes-card__description">
             <h2>${item.name}</h2>
             <h2><i>'${dishObj.name.tr}'</i></h2>
-            <p><span>${item.portion}</span> ${words.portion[lang]} ${item.cost} ${currencySymbol}</p>  
+            <p><span>${item.portion}</span> ${words.portion[lang]} ${item.cost} ${currencySymbol}</p>
           </div>
         </div>
         <div class="basket-card__management">
@@ -234,121 +291,100 @@ function updateBasket() {
           <span class="portion-number">${item.quantity}</span>
           <button class="portion-plus"><i class="fa-solid fa-plus"></i></button>
         </div>
-        <p class="basket-card__cost" >
+        <p class="basket-card__cost">
           ${words.cost[lang]} <span>${item.totalCost}${currencySymbol}</span>
         </p>
       `;
-
-      // Добавляем обработчики событий на кнопки + и -
       basketCard.querySelector('.portion-plus').addEventListener('click', () => basketPortionPlus(item.name, item.portion, item.categoryName));
       basketCard.querySelector('.portion-minus').addEventListener('click', () => basketPortionMinus(item.name, item.portion, item.categoryName));
-
       basketListDiv.appendChild(basketCard);
     });
   }
-  calculTotalPrice()
+  calculTotalPrice();
 }
-
 
 function basketPortionPlus(name, portion, categoryName) {
   for (const cart of changedCart) {
     if (cart.name === name && cart.portion === portion) {
-      cart.quantity++
-      cart.totalCost = cart.quantity * cart.cost
+      cart.quantity++;
+      cart.totalCost = cart.quantity * cart.cost;
     }
   }
-  categoryState[categoryName][name][portion].quantity++
-  categoryState[categoryName][name][portion].totalCost = categoryState[categoryName][name][portion].quantity * categoryState[categoryName][name][portion].cost
-  updateBasket()
-  renderDishes(activeDishes, activecategoryName)
+  categoryState[categoryName][name][portion].quantity++;
+  categoryState[categoryName][name][portion].totalCost =
+    categoryState[categoryName][name][portion].quantity * categoryState[categoryName][name][portion].cost;
+  updateBasket();
+  renderDishes(activeDishes, activecategoryName);
 }
 
 function basketPortionMinus(name, portion, categoryName) {
   for (const cart of changedCart) {
     if (cart.name === name && cart.portion === portion) {
-      cart.quantity = cart.quantity - 1
-      if (cart.quantity == 0) {
-        changedCart = changedCart.filter(item => !(item.name === name && item.portion === portion));
-
+      cart.quantity--;
+      if (cart.quantity === 0) {
+        changedCart = changedCart.filter(i => !(i.name === name && i.portion === portion));
         delete categoryState[categoryName][name][portion];
         if (Object.keys(categoryState[categoryName][name]).length === 0) {
           delete categoryState[categoryName][name];
         }
-        console.log(changedCart, categoryState);
       } else {
-        cart.totalCost = cart.quantity * cart.cost
-        categoryState[categoryName][name][portion].quantity = categoryState[categoryName][name][portion].quantity - 1
-        categoryState[categoryName][name][portion].totalCost = categoryState[categoryName][name][portion].quantity * categoryState[categoryName][name][portion].cost
-
+        cart.totalCost = cart.quantity * cart.cost;
+        categoryState[categoryName][name][portion].quantity--;
+        categoryState[categoryName][name][portion].totalCost =
+          categoryState[categoryName][name][portion].quantity * categoryState[categoryName][name][portion].cost;
       }
-      updateBasket()
-      renderDishes(activeDishes, activecategoryName)
-
+      updateBasket();
+      renderDishes(activeDishes, activecategoryName);
     }
   }
-
 }
 
-// Функция для поиска блюда по имени и категории
 function findDishByName(name, categoryName) {
   for (const category of dishesList) {
     if (category.category[lang] === categoryName) {
       for (const dish of category.dishes) {
-        if (dish.name[lang] === name) {
-          return dish;
-        }
+        if (dish.name[lang] === name) return dish;
       }
     }
   }
   return null;
 }
 
-// Функция для обработки нажатия кнопки + в корзине
-// function handlePortionPlus(dish, button) {
-//   updatePortion(button, 'plus', dish, dish.categoryName);
-// }
-
-// // Функция для обработки нажатия кнопки - в корзине
-// function handlePortionMinus(dish, button) {
-//   updatePortion(button, 'minus', dish, dish.categoryName);
-// }
-
-// Создание кнопок категорий при загрузке страницы
 createCategoryButtons();
 
-
-
-
-
-
-
-
 const totalPriceSpan = document.querySelector('#total-price');
-function calculTotalPrice(){
-  let totalPrice = 0;
-  for (const cart of changedCart){
-    totalPrice += cart.totalCost
-  }
-  totalPriceSpan.innerText = totalPrice;
+function calculTotalPrice() {
+  let total = 0;
+  for (const cart of changedCart) total += cart.totalCost;
+  totalPriceSpan.innerText = total;
 }
 
 function basketBoxOpenClouse() {
   basketButtonOpen.classList.toggle('button_moveLeft');
   basketButtonClouse.classList.toggle('basket-clouse_active');
   basketBox.classList.toggle('basket-box_open');
+  document.body.classList.toggle('basket-open');
 }
+
 const basketButtonOpen = document.querySelector('.basket');
 const basketButtonClouse = document.querySelector('.basket-clouse');
 const basketBox = document.querySelector('.basket-box');
 
-basketButtonOpen.onclick = function () {
-  basketBoxOpenClouse()
-}
-basketButtonClouse.onclick = function () {
-  basketBoxOpenClouse()
-}
+basketButtonOpen.onclick = () => basketBoxOpenClouse();
+basketButtonClouse.onclick = () => basketBoxOpenClouse();
 
-document.querySelector('#annonce-block-clouse').onclick = function(){
+document.querySelector('#annonce-block-clouse').onclick = function () {
   document.querySelector('.annonce-block').classList.add('displayNone');
+  document.querySelector('.annonce-backdrop').classList.add('displayNone');
   document.querySelector('body').classList.remove('active_no');
 }
+
+// Hide nav on scroll, show only at very top
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY < 10) {
+    nav.classList.remove('nav--hidden');
+  } else {
+    nav.classList.add('nav--hidden');
+  }
+}, { passive: true });
