@@ -776,6 +776,7 @@ body.menu .dishes-list .change .dishes-card__info {
   letter-spacing: 0.02em;
   text-transform: none;
   flex-shrink: 0;
+  width: fit-content;
 }
 
 .basket-box .basket-list {
