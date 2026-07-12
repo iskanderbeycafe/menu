@@ -82,9 +82,9 @@ const dishesList = [
       {
         "img": "wraps-and-gobits/meat-gobit",
         "name": {
-          "ru": "Суджук в хлебе (Гобит)",
-          "tr": "Sucuk Ekmek (Gobit)",
-          "en": "Grilled Sujuk"
+          "ru": "Суджук в Гобите",
+          "tr": "Sucuklu Gobit",
+          "en": "Soujouk Gobit"
         },
         "description": {
           "ru": "",
@@ -793,7 +793,7 @@ const dishesList = [
         "name": {
           "ru": "Суджук Бургер",
           "tr": "Sucuk Burger",
-          "en": "Grilled Sujuk Burger"
+          "en": "Soujouk Burger"
         },
         "description": {
           "ru": "",
